@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorial de Cálculo - Multa LC429-23</title>
+    <style>
+      /* style.css */
+  
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+      }
+  
+      .page {
+        margin: 5mm;
+        width: 210mm;
+        height: 297mm;
+        border: 1mm solid #1C1C1C;
+        padding: 5mm;
+      }
+  
+      header {
+        text-align: center;
+        margin-bottom: 0.5mm;
+      }
+  
+      img {
+        max-width: 600px;
+      }
+  
+      h1 {
+        font-size: 12pt;
+        font-weight: bold;
+        margin-bottom: 0.5mm;
+      }
+  
+      h2 {
+        font-size: 11pt;
+        font-weight: bold;
+        margin-bottom: 0.5mm;
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 0.5mm;
+        ffont-size: 8pt;
+      }
+  
+      select,
+      input[type="text"] {
+        width: 100%;
+        padding: 0.5mm;
+        margin-bottom: 0.5mm;
+        font-size: 8pt;
+      }
+  
+      footer {
+        margin-top: 20mm;
+        text-align: center;
+        font-size: 11pt;
+      }
+            @media print {
+               .noprint {
+                  visibility: hidden;
+               }
+            }
+    </style>
+  </head>
+
+<body>
+  <div class="page">
+    <header>
+      <img src=cabecalho.png width=600>
+      <h1>SIMULADOR - MULTA COMPENSATÓRIA LC 429/2023</h1>
+    </header>
+
+ <!-- -------------------------------Dados do Imóvel------------------------------------>
+
+    <h2>1) Dados do imóvel</h2>
+
+  <label>Fator de Correção quanto à Localização (FL):</label>
+  <select id="lista1">
+    <option value="1.7">ABDON DAVID SCHMITT (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">ABEL ADRIANO DA SILVA (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.7">ABELARDO COSTA FILHO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">ABELARDO LUZ (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">ABELARDO MENDONCA SOBRINHO -SD (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="2.0">ABERCIO WERNER (CENTRO) (FL = 2.0)</option>
+    <option value="1.1">ABILIO CORREA DE MELLO (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.7">ABILIO OTAVIO DO CANTO - VER (RESSACADA) (FL = 1.7)</option>
+    <option value="1.7">ABRAAO BERNARDINO ROCHA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">ABRAAO BERNARDINO ROCHA (FAZENDINHA) (FL = 1.7)</option>
+    <option value="2.5">ABRAHAO JOAO FRANCISCO - SERVIDAO VER (FAZENDA) (FL = 2.5)</option>
+    <option value="2.5">ABRAHAO JOAO FRANCISCO -AV VER (CENTRO) (FL = 2.5)</option>
+    <option value="1.7">ABRAHAO JOAO FRANCISCO -AV VER (DOM BOSCO) (FL = 1.7)</option>
+    <option value="2.5">ABRAHAO JOAO FRANCISCO -AV VER (FAZENDA) (FL = 2.5)</option>
+    <option value="1.4">ABRAHAO JOAO FRANCISCO -AV VER (NSA SRA DAS GRACAS) (FL = 1.4)</option>
+    <option value="1.7">ABRAHAO JOAO FRANCISCO -AV VER (RESSACADA) (FL = 1.7)</option>
+    <option value="1.7">ABRAHAO JOAO FRANCISCO -AV VER (RESSACADA/CARVALHO) (FL = 1.7)</option>
+    <option value="1.2">ACACIAS - DAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">ACACIO PEREIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">ACARI ANTONIO MOSER (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">ACEDILO MONTEIRO DE LIMA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">ACELINO ALVES DOS SANTOS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.0">ACYLINO JOSE FELICIO (MURTA) (FL = 1.0)</option>
+    <option value="1.7">ACYR CUNHA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.4">ADAO VANDAL (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">ADELE SCHOENAU (FAZENDA) (FL = 1.2)</option>
+    <option value="1.0">ADÉLIA SCHAEFER MOSER (CANHANDUBA) (FL = 1.0)</option>
+    <option value="1.0">ADELINO FRANCISCO MAFRA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">ADELSO LEONEL DE AMORIM (CIDADE NOVA) (FL = 1.0)</option>
+    <option value="1.0">ADEMAR BARBI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="2.5">ADERBAL RAMOS DA SILVA - DR. (CENTRO) (FL = 2.5)</option>
+    <option value="1.2">ADMAR GARCIA DA SILVA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">ADOLFO BATSCHAUER (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">ADOLFO BATSCHAUER (SAO JUDAS) (FL = 1.7)</option>
+    <option value="2.5">ADOLFO GERMANO DE ANDRADE -CAP (CENTRO) (FL = 2.5)</option>
+    <option value="1.0">ADOLFO J PONTES PFEILSTICKER (MURTA) (FL = 1.0)</option>
+    <option value="1.4">ADOLFO JOSE DE ASSIS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">ADOLFO KONDER - AV GOVERNADOR (CIDADE NOVA) (FL = 1.4)</option>
+    <option value="1.4">ADOLFO KONDER - AV GOVERNADOR (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">ADOLPHO CUGNIER (RESSACADA) (FL = 1.7)</option>
+    <option value="3.3">ADOLPHO DE OLIVEIRA JUNIOR (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">AFONSO ORSI (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.0">AGENOR GENEROSO MELLO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">AGEU JOAO GOMES (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">AGILIO CUNHA (CIDADE NOVA) (FL = 1.4)</option>
+    <option value="1.4">AGOSTINHO ALVES RAMOS (CORDEIROS) (FL = 1.4)</option>
+    <option value="2.5">AGOSTINHO FERNANDES VIEIRA (FAZENDA) (FL = 2.5)</option>
+    <option value="1.0">AGOSTINHO SOARES (MURTA) (FL = 1.0)</option>
+    <option value="1.2">AGROLANDIA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">AGUINALDO DEOLA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">AGUSTINHO LEMOS DE CAMARGO (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.4">AIRTON DE SOUZA - VEREADOR (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.0">AIRTON ROGÉRIO TRIDAPALLI (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.0">AIRTON TEIXEIRA DE MELLO - VER (MURTA) (FL = 1.0)</option>
+    <option value="1.7">ALADI SCHENDROSKI BINI (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">ALAGOAS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">ALBANO EICHOLTZ (SAO JOAO) (FL = 1.7)</option>
+    <option value="3.3">ALBATROZ (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.1">ALBERTO BUCHELE (MURTA) (FL = 1.1)</option>
+    <option value="1.2">ALBERTO DAGNONI (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.4">ALBERTO RAMOS FILHO (SAO VICENTE) (FL = 1.4)</option>
+    <option value="2.0">ALBERTO WERNER (CENTRO) (FL = 2.0)</option>
+    <option value="2.5">ALBERTO WERNER (VILA OPERARIA) (FL = 2.5)</option>
+    <option value="1.7">ALBINO GUGELMIN (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">ALBINO GUGELMIN (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">ALCIDES BENTO GONCALVES (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.4">ALCIDES CALIXTO GONÇALVES JUNIOR (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.1">ALCIDES ESPERIDIAO PEREIRA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">ALCIDES NASCIMENTO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">ALCIDES PEREIRA (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.2">ALCIDES RODRIGUES DA COSTA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">ALDHEMAR VEIGA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">ALDO LOCATELLI (FAZENDA) (FL = 1.2)</option>
+    <option value="1.7">ALDO MARCOS DA CUNHA (RESSACADA) (FL = 1.7)</option>
+    <option value="1.2">ALDO SILVA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.0">ALEX CIRO VICENTE (MURTA) (FL = 1.0)</option>
+    <option value="1.7">ALEXANDRE ALEXIUS REISER (RESSACADA) (FL = 1.7)</option>
+    <option value="1.0">ALEXANDRE D`AVILA BAPTISTA (MURTA) (FL = 1.0)</option>
+    <option value="2.0">ALEXANDRE FLEMING - DR (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">ALFREDO CONRADO MOREIRA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="2.5">ALFREDO EICKE (BARRA DO RIO) (FL = 2.5)</option>
+    <option value="1.7">ALFREDO EIKE JUNIOR (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">ALFREDO EIKE JUNIOR (MARUI) (FL = 1.7)</option>
+    <option value="1.4">ALFREDO ESSER (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">ALFREDO FANTINI (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.4">ALFREDO KLEIS (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">ALFREDO LABES (RESSACADA) (FL = 1.7)</option>
+    <option value="1.2">ALFREDO LUDOVINO D`AVILA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.0">ALFREDO TROMPOWISKY (CENTRO) (FL = 2.0)</option>
+    <option value="2.0">ALFREDO TROMPOWISKY (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.2">ALICE DOS SANTOS BITTENCOURT (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">ALICE VIEIRA DA SILVA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">ALMERINDO VICTOR DE FREITAS (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="2.5">ALMIRANTE BARROSO (CENTRO) (FL = 2.5)</option>
+    <option value="5.0">ALMIRANTE TAMANDARE (CENTRO) (FL = 5.0)</option>
+    <option value="2.0">ALMIRANTE TAMANDARE - BECO (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">ALOIS WIPPEL (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.1">ALOISIO KORMANN (MURTA) (FL = 1.1)</option>
+    <option value="1.1">ALTINO DE SOUZA (MURTA) (FL = 1.1)</option>
+    <option value="1.7">ALTINO WERNER (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">ALVARO BERALDI (RESSACADA/CARVALHO) (FL = 1.0)</option>
+    <option value="1.4">ALVINA RAMOS (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">ALVINO BAUMANN (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">ALZIRA DE OLIVEIRA PEREIRA (FAZENDINHA) (FL = 1.2)</option>
+    <option value="2.0">AMANCIO COELHO (CENTRO) (FL = 2.0)</option>
+    <option value="1.4">AMAPA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">AMARO BELMIRO COELHO (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.7">AMARO JAQUES (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">AMAURI DE SOUZA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">AMAZONAS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">AMBROZIO TESTONI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.1">AMERICO MEINICKE (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.4">AMETISTA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">ANA DALSOQUIO DOS SANTOS (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.1">ANA MAFRA PEREIRA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">ANAIR DE SOUZA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">ANAIR DE SOUZA (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.2">ANALINA REGIS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">ANASTÁCIO ANTÔNIO DO NASCIMENTO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">ANASTACIO JOSE MENDES (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">ANASTACIO JOSE PAULO - SERV (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.7">ANASTACIO LUIZ PEREIRA - ESTUD (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.0">ANATALIA DA SILVA (FAZENDA) (FL = 1.0)</option>
+    <option value="1.1">ANATOLIO JOSÉ DA SILVA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.7">ANDRE BARBI - TRAVESSA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">ANDRE BARBI - TRAVESSA (VILA OPERARIA) (FL = 1.7)</option>
+    <option value="3.3">ANDRE LUIZ VIDAL SOARES (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.1">ANDRELINO WERNER (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">ANGELA CECILIA TOLARDO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">ANGELO RODI (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">ANGELO RODI (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">ANIBAL CEZAR (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">ANIBAL CEZAR (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.4">ANIBAL PEREIRA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">ANISIO COSTA (SAO JOAO) (FL = 1.7)</option>
+    <option value="2.0">ANITA GARIBALDI (CENTRO) (FL = 2.0)</option>
+    <option value="1.0">ANNA CUSTODIO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">ANNA CUSTODIO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">ANNANIAS CAETANO DA SILVA (MURTA) (FL = 1.0)</option>
+    <option value="1.0">ANOR NAGEL JUNIOR - PASTOR (MURTA) (FL = 1.0)</option>
+    <option value="1.0">ANSELMO KNIHS (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.0">ANTENOR ANTONIO VIEIRA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">ANTENOR FANTONI (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.2">ANTERO ANTONIO CARDOSO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">ANTERO CHAVES (DOM BOSCO) (FL = 1.7)</option>
+    <option value="3.3">ANTHURIUM (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.0">ANTONIA APOLLINARIO (CANHANDUBA) (FL = 1.0)</option>
+    <option value="1.1">ANTONIA ARAUJO (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.1">ANTONIA GUMS BAUMGARTNER (MURTA) (FL = 1.1)</option>
+    <option value="1.7">ANTONIO ADAO DIAS (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.0">ANTONIO ANDRE PAULO (FAZENDA) (FL = 1.0)</option>
+    <option value="1.4">ANTONIO AYRES DOS SANTOS (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">ANTONIO BELMIRO FURTADO (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.0">ANTONIO BENTO DA SILVA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">ANTONIO BERNARDO SCHAUFFERT (CENTRO) (FL = 1.2)</option>
+    <option value="1.7">ANTONIO BONANOMI (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">ANTONIO BORBA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">ANTONIO CABRAL (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">ANTONIO CAETANO (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">ANTONIO CARLOS DA SILVA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">ANTONIO CARLOS P LEAO FILHO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">ANTONIO COUTO - TRAVESSA (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="1.4">ANTONIO CYRILO DUTRA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.4">ANTONIO DE SOUZA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">ANTONIO DE SOUZA CUNHA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="2.0">ANTONIO DEOLA - TRAVESSA (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">ANTONIO FOES (FAZENDA) (FL = 1.2)</option>
+    <option value="1.2">ANTONIO FRANCISCO DE OLIVEIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">ANTONIO HEIL - RODOVIA DEPUTADO (ARRAIAL DOS CUNHA) (FL = 1.0)</option>
+    <option value="1.0">ANTONIO HEIL - RODOVIA DEPUTADO (CANHANDUBA) (FL = 1.0)</option>
+    <option value="1.0">ANTONIO HEIL - RODOVIA DEPUTADO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">ANTONIO HEIL - RODOVIA DEPUTADO (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.0">ANTONIO HEIL - RODOVIA DEPUTADO (PACIENCIA) (FL = 1.0)</option>
+    <option value="1.0">ANTONIO HEIL - RODOVIA DEPUTADO (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.1">ANTONIO JOAO VICENTE - DIACONO (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">ANTONIO JOSE CUCO (SAO ROQUE) (FL = 1.0)</option>
+    <option value="1.1">ANTONIO JOSE DA VEIGA (MARUI) (FL = 1.1)</option>
+    <option value="1.2">ANTONIO JOSE MARCOS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">ANTONIO JOSE PEIXER - VEREADOR (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.0">ANTONIO JOSE REBELLO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">ANTONIO LIRA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="2.5">ANTONIO LOPES GONZAGA - PRACA (CENTRO) (FL = 2.5)</option>
+    <option value="1.2">ANTONIO M VASCONCELOS DRUMOND (FAZENDA) (FL = 1.2)</option>
+    <option value="1.7">ANTONIO MANOEL CORREIA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="2.5">ANTONIO MANOEL MOREIRA (FAZENDA) (FL = 2.5)</option>
+    <option value="1.4">ANTONIO MULLER REIS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">ANTONIO NOTARI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">ANTONIO PERAO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">ANTONIO QUINTAS MAIA - TENENTE (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.7">ANTONIO RAMOS (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">ANTONIO ROCHA D`ANDRADE (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">ANTONIO RUDOLF - CABO PM (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.0">ANTONIO TIRONI (MURTA) (FL = 1.0)</option>
+    <option value="1.2">ANTONIO VALENZA (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.0">ANTONIO VINOTTI (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.0">ANTONIO VITOR GONCALVES (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.4">ANTONIO ZAGUINI - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">APOLONIA INTHUR CORDEIRO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">APRIGIO JOSE PINTO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">AQUILINO BURIGO (CABECUDAS) (FL = 1.2)</option>
+    <option value="1.4">ARACAJU (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">ARACY RUCCI GRIMES (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">ARARANGUA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">ARCHIMEDES LOBO JOHANNSEN (MURTA) (FL = 1.0)</option>
+    <option value="1.1">ARCILIO ZEVERINO (MURTA) (FL = 1.1)</option>
+    <option value="1.2">ARGEMIRO MENDONCA (MIROCA) (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.0">ARI ZERMIANI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="2.5">ARIRIBA (BALNEARIO SANTA CLARA) (FL = 2.5)</option>
+    <option value="1.7">ARISTIDES ESTEVAO DA SILVA (RESSACADA) (FL = 1.7)</option>
+    <option value="1.7">ARISTIDES FRANCISCO PALUMBO (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">ARISTIDES FRANCISCO PALUMBO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.0">ARISTIDES PEDRONI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">ARISTIDES SPERBER (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.5">ARLECIO DE SOUZA FLOR (CENTRO) (FL = 2.5)</option>
+    <option value="1.0">ARLINDO MAFRA (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.1">ARLINDO WERNER (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.4">ARMANDO DE AMORIM (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">ARMANDO FONTOLAN (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">ARMINDO MINELLA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">ARNALDO EMILIO DALCOQUIO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">ARNALDO JOSE DE OLIVEIRA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">ARNALDO LOPES (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">ARNOLDO CORREA DE MELLO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.0">ARNOLDO JOÃO DE SOUZA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">ARNOLDO LOPES GONZAGA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">ARNOLDO POLLHEIM (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.2">ARTHUR JOSE REBELLO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.0">ARTUR FERMIANO TEIXEIRA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">ARTUR TORQUATO BATISTA (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.0">ARTUR WINTER (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">ARTUR WIPPEL (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.4">ARVELINO FORMENTIN (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">ARVOREDO - TRAVESSA (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.4">ATAIDE NIADA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">ATILIO DALSOQUIO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">ATILIO ORSI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.1">AUCINEIA PEREIRA DE SOUZA (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.0">AUGUSTO CARDOSO PEREIRA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">AUGUSTO CUGNIER (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.1">AUGUSTO DE JESUS (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.2">AUGUSTO FIORENZANO JR (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.5">AUGUSTO LUIZ VOIGT (CABECUDAS) (FL = 2.5)</option>
+    <option value="1.2">AUGUSTO PEDRO SCHOENAU (FAZENDA) (FL = 1.2)</option>
+    <option value="1.0">AUREA DA SILVA SIMAS (MURTA) (FL = 1.0)</option>
+    <option value="1.4">AUREA SOUZA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">AURORA TABALIPA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">AUSTERGILIO ANGELINO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">AVELINO WERNER (MARUI) (FL = 1.1)</option>
+    <option value="1.1">AVENIDA 01 - AVELINO WERNER II (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">AYRES GUSTAVO PEREIRA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">AZALEIAS - DAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">B LOT JARDIM RESIDENCIAL COPAS DO VALE (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">B LOT POPULAR JARDIM SANTA CLARA (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.1">B LOTEAMENTO DONA BENTA (MURTA) (FL = 1.1)</option>
+    <option value="1.4">BAHIA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">BASILIO DOMINGOS GONCALVES (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">BECO (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.2">BECO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">BECO DO ALDO (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.2">BELA CRUZ - TRAVESSA (VILA OPERARIA) (FL = 1.2)</option>
+    <option value="1.2">BELARMINO MANOEL LEITE (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.4">BELEM - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">BENJAMIM CONSTANT (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.0">BENJAMIM DAGNONI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">BENJAMIM DAGNONI (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.7">BENJAMIM WENDHAUSEN (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">BENJAMIN FRANKLIN PEREIRA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">BENJAMIN FRANKLIN PEREIRA (VILA OPERARIA) (FL = 1.7)</option>
+    <option value="1.1">BENTA EVARISTA DA SILVA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.7">BENTO ADRIANO PEREIRA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">BENTO CESARIO DE ARAGAO (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.0">BENTO JOAO DA ROCHA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.1">BENTO NASCIMENTO - POETA (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.1">BERNADINO RAMOS (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.7">BERNARDETTE DELL´AGNOLO BOZZANO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">BERNARDINA DA ROCHA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.0">BERNARDINO JOAO VICTORINO -TRAV (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.2">BERNARDINO LEONEL FELIX (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">BERNARDO PETTER (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">BERTHOLINO SERPA (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.2">BIGUACU (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">BLUMENAU (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="2.5">BLUMENAU (CENTRO) (FL = 2.5)</option>
+    <option value="2.5">BLUMENAU (SAO JOAO) (FL = 2.5)</option>
+    <option value="2.5">BLUMENAU (VILA OPERARIA) (FL = 2.5)</option>
+    <option value="1.4">BOA VISTA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">BOLIVIA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">BOLIVIA (NOVA BRASILIA) (FL = 1.7)</option>
+    <option value="1.7">BOLIVIA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">BOM RETIRO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">BOTUVERA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">BR 101 (CANHANDUBA) (FL = 1.0)</option>
+    <option value="1.0">BR 101 (CIDADE NOVA) (FL = 1.0)</option>
+    <option value="1.4">BR 101 (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">BR 101 (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">BR 101 (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">BR 101 (RESSACADA/CARVALHO) (FL = 1.0)</option>
+    <option value="1.0">BR 101 (RIO NOVO) (FL = 1.0)</option>
+    <option value="1.0">BR 101 (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.0">BR 101 (SAO ROQUE) (FL = 1.0)</option>
+    <option value="1.0">BR 101 (SAO VICENTE) (FL = 1.0)</option>
+    <option value="1.0">BR 101 KM 125 (CANHANDUBA) (FL = 1.0)</option>
+    <option value="1.2">BRACO DO NORTE (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">BRASILIA - AVENIDA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">BRAULIO WERNER (BALNEARIO SANTA CLARA) (FL = 1.7)</option>
+    <option value="1.2">BRUNO FRANÇA (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.7">BRUNO P. REISER (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.0">BRUNO VICENTE DA LUZ (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">BRUNO VICENTE DA LUZ (PEDRA DE AMOLAR) (FL = 1.0)</option>
+    <option value="2.5">BRUSQUE (CENTRO) (FL = 2.5)</option>
+    <option value="2.5">BRUSQUE (DOM BOSCO) (FL = 2.5)</option>
+    <option value="2.5">BRUSQUE (VILA OPERARIA) (FL = 2.5)</option>
+    <option value="2.5">BRUSQUE - BECO 1 (CENTRO) (FL = 2.5)</option>
+    <option value="1.2">BUBI KOBAR - TRAVESSA (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="1.2">BUGANVILIAS - DAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.1">C LOT JARDIM JULIETE (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.2">C LOT JARDIM RESIDENCIAL COPAS DO VALE (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">C LOT POPULAR JARDIM SANTA CLARA (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="2.5">C LOT VILAGE JULIANA (BALNEARIO SANTA CLARA) (FL = 2.5)</option>
+    <option value="1.2">C LOTEAMENTO SAO DOMINGOS (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">CACADOR (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.5">CACILDO ROMAGNANI - DR. (CENTRO) (FL = 2.5)</option>
+    <option value="1.1">CAMBE - TRAVESSA (MARUI) (FL = 1.1)</option>
+    <option value="5.0">CAMBORIU (CENTRO) (FL = 5.0)</option>
+    <option value="2.5">CAMBORIU (FAZENDA) (FL = 2.5)</option>
+    <option value="1.2">CAMELIAS - DAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.4">CAMPO GRANDE (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">CAMPOS NOVOS - AVENIDA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">CANOINHAS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">CARGELINO FRANCELINO (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.1">CARLOS ALBERTO MAYR (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.1">CARLOS ALBERTO MAYR (MARUI) (FL = 1.1)</option>
+    <option value="3.3">CARLOS ALBERTO NIEHUES (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="3.3">CARLOS DRUMOND DE ANDRADE (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.2">CARLOS DRUMOND DE ANDRADE (SAO VICENTE) (FL = 1.2)</option>
+    <option value="5.0">CARLOS ELY CASTRO - AVENIDA VEREADOR (CENTRO) (FL = 5.0)</option>
+    <option value="1.2">CARLOS GONCALVES DUTRA (FAZENDA) (FL = 1.2)</option>
+    <option value="1.1">CARLOS HUGO DA ROSA (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="2.5">CARLOS HUGO PRAUM (CENTRO) (FL = 2.5)</option>
+    <option value="2.0">CARLOS HUGO PRAUM - BECO 1 (CENTRO) (FL = 2.0)</option>
+    <option value="1.1">CARLOS JUVENAL GOMES (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.0">CARLOS LUIZ STRINGARI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">CARLOS OTTO PRIESS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">CARLOS PAULO PFELSTICKER - DR. (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="2.0">CARLOS SANTANA (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.4">CARLOS SCHROEDER (SAO VICENTE) (FL = 1.4)</option>
+    <option value="2.0">CARLOS SEARA (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.7">CARLOS SERAFIM ZAGUINI (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.0">CARMO CASEMIRO DA SILVA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="3.3">CAROLA COELHO (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">CAROLINA VAILATI (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">CASSILDA VARGAS AZEVEDO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">CASTELO BRANCO - AVENIDA (SALSEIROS) (FL = 1.1)</option>
+    <option value="1.2">CATARINA DOS PASSOS BOSCO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">CEARA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">CECILIA BRANDAO (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">CECILIA MEIRELLES (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">CELESTE PEREIRA KRACIK - SERVIDAO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.1">CELSO PEREIRA DA SILVA - PRACA (MURTA) (FL = 1.1)</option>
+    <option value="1.7">CEREJEIRAS - DAS (RESSACADA) (FL = 1.7)</option>
+    <option value="1.1">CESAR AUGUSTO DALSOQUIO (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.1">CESAR AUGUSTO DALSOQUIO (SALSEIROS) (FL = 1.1)</option>
+    <option value="1.7">CESAR GABOARDI - SERVIDAO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">CESAR STAMM (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.7">CESARIO CHAVES (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">CHAPECO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">CHRISPIM ANTONIO FERREIRA (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.0">CHRISPIM EVARISTO (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.1">CHRISTIANE DO NASCIMENTO (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.0">CHRISTINA MERLO (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.7">CHRISTINA REBELLO PRIESS (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">CINGAPURA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">CIPRESTES - DOS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">CIRIACO MEIRINHO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="2.0">CIRIACO MEIRINHO (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.0">CLAIR BRUN DA SILVA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">CLAIR BRUN DA SILVA (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.0">CLARA DAGNONI DE ANDRADE (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.1">CLARINDA JULIO PEREIRA (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.0">CLARINDO SEBASTIAO DA CUNHA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">CLAUDINO JOSE F PACHECO - VER (SAO JOAO) (FL = 1.7)</option>
+    <option value="3.3">CLAUDIO DE SOUZA FERREIRA (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">CLITO CESAR REBELLO - BEL. (SAO JUDAS) (FL = 1.7)</option>
+    <option value="2.0">CLOTILDE RAMOS CHAVES - PROF (FAZENDINHA) (FL = 2.0)</option>
+    <option value="1.7">COLOMBIA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">CONCEICAO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">CONCEICAO DEONISIO GABRIEL- TV (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.2">CONCORDIA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="5.0">CONEGO TOMAZ FONTES (CENTRO) (FL = 5.0)</option>
+    <option value="1.2">CONEGUNDA TOMAZINA BOSCO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.1">CONSTANTINO D`IVANENKO (MARUI) (FL = 1.1)</option>
+    <option value="1.2">CONSTANTINO LUCAS PEREIRA (CENTRO) (FL = 1.2)</option>
+    <option value="1.7">CONSUL CARLOS RENAUX (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.7">CORIFEU DE AZEVEDO MARQUES (SAO JUDAS) (FL = 1.7)</option>
+    <option value="2.0">CORIFEU DE AZEVEDO MARQUES (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.1">COSME BUZARELLO - PROF (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.1">COSTA E SILVA - AV PRESIDENTE (MURTA) (FL = 1.1)</option>
+    <option value="2.0">CRICIUMA (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">CRISANTEMOS - DOS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.0">CRUZ E SOUZA (CENTRO) (FL = 2.0)</option>
+    <option value="1.4">CUIABA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">CURITIBANOS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">CURT HERING (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.0">CYPRIANA WANZUITA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">CYPRIANO NUNES DOS SANTOS (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.1">D - PRACA CELSO PEREIRA DA SILVA (MURTA) (FL = 1.1)</option>
+    <option value="1.0">D LOT POPULAR JARDIM SANTA CLARA (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="5.0">DAGOBERTO NOGUEIRA (CENTRO) (FL = 5.0)</option>
+    <option value="1.2">DALVA SANTOS ESTANISLAU (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">DALVINA DE OLIVEIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">DAMASIO FRANCISCO NUNES (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.7">DANIEL VEIGA CUGNIER (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.7">DARIO CESARIO PEREIRA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">DARIO DA SILVA (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.0">DAS FIGUEIRAS (FAZENDA) (FL = 1.0)</option>
+    <option value="1.7">DAVID ADAO SCHMIDT (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">DAVID ADAO SCHMIDT (NOVA BRASILIA) (FL = 1.7)</option>
+    <option value="3.3">DELFIM MARIO PADUA PEIXOTO (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="3.3">DEMETRIO IZIDORO CARDOSO (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">DEMETRIO P S MEDEIROS (RESSACADA) (FL = 1.7)</option>
+    <option value="1.2">DEMOSTENES FEMINELLA FILHO - AVENIDA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.7">DEOGRACIO DE OLIVEIRA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">DIAMANTE - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">DILCEA FARIA PEREIRA FACANHA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">DIONISIO CERQUEIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.0">DIONIZIO VEIGA - SERVIDAO (CENTRO) (FL = 2.0)</option>
+    <option value="3.3">DOCA REBELLO (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="2.5">DOM JOAQUIM DOMINGUES DE OLIVEIRA (CENTRO) (FL = 2.5)</option>
+    <option value="1.2">DOMINGOS ANTONIO BORBA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">DOMINGOS BRAZ SEDREZ (MURTA) (FL = 1.0)</option>
+    <option value="1.2">DOMINGOS DE ALMEIDA - AVENIDA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.7">DOMINGOS JOSE CABRAL (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">DOMINGOS LAUREANO (SAO JOAO) (FL = 1.7)</option>
+    <option value="2.0">DOMINGOS MANOEL RODRIGUES (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">DOMINGOS NUNES DOS SANTOS (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.0">DOMINGOS RAMPELOTTI (SAO ROQUE) (FL = 1.0)</option>
+    <option value="1.7">DONATO PEREIRA (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.1">DORVAL JOSE DE ARAGAO (MURTA) (FL = 1.1)</option>
+    <option value="1.0">DOUTEL DE ANDRADE (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="2.0">DUQUE DE CAXIAS - AVENIDA (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.0">E LOT POPULAR JARDIM SANTA CLARA (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.2">EDGARD NEUWIRTH (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">EDMUNDO DE SOUZA CUNHA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">EDMUNDO HEUSI JUNIOR (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">EDMUNDO KIENAST (FAZENDA) (FL = 1.7)</option>
+    <option value="1.0">EDMUNDO WIPPEL (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">EDUARDO GONCALVES DUTRA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">EDUARDO PESSOA LINS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">EDUARDO TEIXEIRA (RESSACADA) (FL = 1.7)</option>
+    <option value="1.1">EDUVIGENS THEODORO DA CUNHA (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.0">EGIDIA DOS SANTOS EVARISTO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">EGON MULLER (RESSACADA) (FL = 1.7)</option>
+    <option value="1.7">EGON SCHAUFFERT (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">ELIAS BRICK ADAIME (RESSACADA) (FL = 1.7)</option>
+    <option value="1.1">ELISABETH MONTIBELLER DOS SANTOS (CORDEIROS) (FL = 1.1)</option>
+    <option value="3.3">ELIZIARIO DA ROSA (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">ELIZIARIO PEREIRA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">ELOY CORDEIRO (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.2">ELSA ROVER DE OLIVEIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">ELYZABETH BARON (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.1">EMA FORNARI CONTE (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">EMANOEL JOSE REBELLO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.0">EMERSON SCHNEIDER (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.7">EMILIA DOS SANTOS (SAO JOAO) (FL = 1.7)</option>
+    <option value="2.0">EMILIA KUHN DA SILVA - TRAV (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.1">EMILIA MAXIMA DOS SANTOS (MURTA) (FL = 1.1)</option>
+    <option value="1.7">EMILIO DA CRUZ COUTINHO (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">EMILIO FRANCISCO ROSA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">EMMANOEL JOSE DE AVIZ (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">EMMANUEL DOS SANTOS (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="2.0">EMMANUEL PEREIRA DE CAMPOS (FAZENDA) (FL = 2.0)</option>
+    <option value="1.4">ENEDINA D`AVILA FERREIRA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.1">ENVINO CARLOS TRUPPEL (MURTA) (FL = 1.1)</option>
+    <option value="1.7">EQUADOR - TRAVESSA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">ERCIDES MAFRA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.4">EREDES SERPA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">ERICO VERISSIMO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">ERMINIA ALVES (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.4">ERMINIO MACHADO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">ERNA HOIER CORREA (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.7">ERNESTINA LAPA DE MACEDO (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.7">ERNESTO KOBARG (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">ERNESTO POLYDORIO FERREIRA (DOM BOSCO) (FL = 1.2)</option>
+    <option value="2.5">ERNESTO SCHNEIDER - ALAMEDA (FAZENDA) (FL = 2.5)</option>
+    <option value="1.4">EROTIDES DA SILVA FONTES - PROFESSORA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.4">ESMERALDA - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">ESMERALDO BRAGA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">ESMERENTINA DOS SANTOS CHAVES (FAZENDA) (FL = 1.2)</option>
+    <option value="1.7">ESPERIDIAO GRACILIANO DA SILVA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.4">ESPIRITO SANTO (CORDEIROS) (FL = 1.4)</option>
+    <option value="2.5">ESTADOS UNIDOS (FAZENDA) (FL = 2.5)</option>
+    <option value="1.4">ESTEFANO JOSE VANOLLI (CIDADE NOVA) (FL = 1.4)</option>
+    <option value="2.5">ESTEFANO JOSE VANOLLI (SAO VICENTE) (FL = 2.5)</option>
+    <option value="1.2">ESTEVAO JOSE GRIMES (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.0">ETELVINA DE BRITO (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.2">EUCLYDES ADAO PEIXER (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">EUDORO SILVEIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">EUGENIO GERALDINO DA FRANCA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">EUGENIO JOSE REICHERT (SAO JOAO) (FL = 1.7)</option>
+    <option value="2.5">EUGENIO MULLER - AV CORONEL (CENTRO) (FL = 2.5)</option>
+    <option value="1.1">EUGENIO PEZZINI (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.0">EUGENIO PEZZINI (MURTA) (FL = 1.0)</option>
+    <option value="1.2">EUNICE CRISTINA DA SILVA (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="2.0">EURICO ADAM (CENTRO) (FL = 2.0)</option>
+    <option value="1.1">EURIPEDES AMORIM LEAL (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.2">EXPEDIC JOSE INACIO DA ROCHA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">EXPEDIC OLIMPIO JOSE BORGES (SAO VICENTE) (FL = 1.4)</option>
+    <option value="2.5">EXPEDICIONARIO - PRACA DO (FAZENDA) (FL = 2.5)</option>
+    <option value="2.5">EXPEDICIONARIO ALEIXO MABA (BARRA DO RIO) (FL = 2.5)</option>
+    <option value="2.5">EXPEDICIONARIO ALEIXO MABA (NOVA BRASILIA) (FL = 2.5)</option>
+    <option value="1.7">EXPEDICIONARIO CARLOS COSTA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">EXPEDICIONARIO JOSE CORREA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.5">EXPEDICIONARIO MARQUETTI (FAZENDA) (FL = 2.5)</option>
+    <option value="1.2">FABIANO E. SILVA MARQUES (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">FABIO CESARIO PEREIRA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">FELICIO MAES (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">FELIPE ALENCASTRO - DR. (MARUI) (FL = 1.1)</option>
+    <option value="1.7">FELIPE REISER (SAO JOAO) (FL = 1.7)</option>
+    <option value="5.0">FELIPE SCHMIDT (CENTRO) (FL = 5.0)</option>
+    <option value="1.2">FELIPPE COSTA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="5.0">FELIX BUSSO ASSEBURG (CENTRO) (FL = 5.0)</option>
+    <option value="1.4">FELIX MALBURG - DOUTOR (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.0">FERMINO VIEIRA CORDEIRO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">FERNANDO GERMANO POTTER (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.4">FERNANDO VIEIRA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">FIORAVANTE RUSSI (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">FIUZA LIMA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="2.0">FIUZA LIMA (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="3.3">FLAMBOYANT (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="2.5">FLORIANO PEIXOTO (CABECUDAS) (FL = 2.5)</option>
+    <option value="2.5">FLORIANOPOLIS (FAZENDA) (FL = 2.5)</option>
+    <option value="1.2">FLORISA PEREIRA GARCIA KUMM (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">FLORISBELA BALBINA DA SILVA GONCALVES (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">FORTALEZA - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">FRANCISCA BERNARDES (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.0">FRANCISCA CASAS RAMOS (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.1">FRANCISCA MACHADO (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.4">FRANCISCA MIRANDA DA VEIGA - SERVIDAO (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">FRANCISCO BETTONI (DOM BOSCO) (FL = 1.2)</option>
+    <option value="1.0">FRANCISCO BOAVENTURA DA SILVA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">FRANCISCO BOAVENTURA DA SILVA (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.7">FRANCISCO CZARNESKI (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">FRANCISCO DALIGNI (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.2">FRANCISCO DE MATTOS DULTRA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">FRANCISCO DE PAULA SEARA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">FRANCISCO DE PAULA SEARA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.1">FRANCISCO DELVAN (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.7">FRANCISCO E CANZIANI - VIA DEP (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.7">FRANCISCO FERREIRA FILHO - TV (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.0">FRANCISCO GARCIA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">FRANCISCO JACOB KHNIS (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.0">FRANCISCO JOSE DE AVIZ (MURTA) (FL = 1.0)</option>
+    <option value="1.1">FRANCISCO MOLLERI (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.1">FRANCISCO NICOLETTI (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.4">FRANCISCO OLEGARIO DOS SANTOS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">FRANCISCO PEDRONI - SERVIDAO (SAO JOAO) (FL = 1.2)</option>
+    <option value="1.0">FRANCISCO PIGORETTI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">FRANCISCO PONTIOLLI (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.7">FRANCISCO RANGEL - DR. (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">FRANCISCO REIS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">FRANCISCO RODRIGUES PEREIRA (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.0">FRANCISCO VECHANI - INSPETOR (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="2.0">FRANKLIN MAXIMO PEREIRA (CENTRO) (FL = 2.0)</option>
+    <option value="5.0">FREDERICO AUGUSTO LUIZ THIEME (CENTRO) (FL = 5.0)</option>
+    <option value="2.0">FREI PEDRO ANTONIO AGOTE (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">FRIDOLIM ERTHAL JUNIOR (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">FRITZ SCHNEIDER (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">FUTURA AVENIDA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">GALDINO DE BORBA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">GALDINO GERONIMO VIEIRA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">GASPAR (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.4">GASPAR DA COSTA MORAES (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.1">GELASIO MANOEL COSTA (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.4">GELASIO PEDRO DE MIRANDA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">GELIO HERCILIO CORREA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">GENELICIO PEDRO DE SOUZA -TRAV (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">GENELIO HELIODORO LUIZ (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">GENESIO TAVARES (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">GENESIO VIEIRA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">GERAL TATU (TATU) (FL = 1.0)</option>
+    <option value="1.1">GERCINO JOSE CORREA (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.0">GERDA WAGENKNECHT SASSE (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">GERMANO BASTOS (MURTA) (FL = 1.0)</option>
+    <option value="1.0">GERMANO DAGNONI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">GERMANO DAGNONI (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.0">GERMANO LUIZ VIEIRA - VEREADOR (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">GERMANO MONTIBELLER (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.4">GERMANO RAUERT - COMANDANTE (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">GERMANO ROZZA (VILA OPERARIA) (FL = 1.7)</option>
+    <option value="1.0">GERTRUDES SILVA SIMAS (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">GERVASIO ANTONIO KLOCK (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">GERVASIO FRANCISCO REGIS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">GERVASIO REGIS JUNIOR (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">GERVASIO VIEIRA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="2.0">GETULIO VARGAS - AVENIDA (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="5.0">GIL STEIN FERREIRA (CENTRO) (FL = 5.0)</option>
+    <option value="1.1">GILBERTO MAFRA - PADRE (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">GILDO FERNANDES PEREIRA (FAZENDA) (FL = 1.2)</option>
+    <option value="1.0">GIUSYPPE MOSER (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">GIUZEPINA COGO CASINI (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.4">GOIANIA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">GOIAS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">GREGORIO CHAVES (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">GUANABARA - AVENIDA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">GUILHERME ALBANI (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">GUILHERME GENUINO RHENIUS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">GUILHERME MAY (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">GUMERCINDO ROCHA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">GUSTAVO BERNEDT (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">GUSTAVO MANOEL DOS SANTOS (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.0">H LOT POPULAR JARDIM SANTA CLARA (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.1">HAMILTON PIMENTEL (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.7">HEBERT KREMER (SAO JOAO) (FL = 1.7)</option>
+    <option value="2.5">HEITOR LIBERATO (CENTRO) (FL = 2.5)</option>
+    <option value="2.5">HEITOR LIBERATO (SAO JOAO) (FL = 2.5)</option>
+    <option value="2.5">HEITOR LIBERATO (SAO JUDAS) (FL = 2.5)</option>
+    <option value="2.5">HEITOR LIBERATO (VILA OPERARIA) (FL = 2.5)</option>
+    <option value="1.2">HEITOR LIBERATO - BECO 3 (CENTRO) (FL = 1.2)</option>
+    <option value="2.0">HEITOR LIBERATO - FUNDOS (CENTRO) (FL = 2.0)</option>
+    <option value="2.5">HEITOR LIBERATO - TRAVESSA (SAO JUDAS) (FL = 2.5)</option>
+    <option value="1.7">HELIO DOUAT DE MENEZES (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">HELIO FIRMO CAETANO (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.0">HENRIQUE ANTONIO CUSTODIO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">HENRIQUE B MARIA DE BORBA-SERV (FAZENDA) (FL = 1.7)</option>
+    <option value="1.1">HENRIQUE BIANCHINI (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.4">HENRIQUE BORBA SANTOS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">HENRIQUE DAUER (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="2.5">HENRIQUE DOUAT (CENTRO) (FL = 2.5)</option>
+    <option value="5.0">HENRIQUE LABES - SERVIDAO (CENTRO) (FL = 5.0)</option>
+    <option value="1.2">HENRIQUE LEONARDO DEOLA PFITZER (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.4">HENRIQUE MICHELS JUNIOR (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.1">HENRIQUE PINOTTI (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.1">HENRIQUE PINOTTI (MARUI) (FL = 1.1)</option>
+    <option value="1.2">HENRIQUE SARMENTO VIEIRA (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.7">HENRIQUE VIGARANI (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">HENRY PEDRO DEITOS (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.1">HERCILIA MOSER (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.0">HERCILIO LUZ (CENTRO) (FL = 1.0)</option>
+    <option value="1.0">HERCILIO TOMAZ DOS SANTOS (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.1">HERCILIO TRAINOTTI (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="2.5">HERCULANO CORREA (CENTRO) (FL = 2.5)</option>
+    <option value="1.2">HERIBERT JOSE SCHMITT - PE (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.0">HERMANN BACHMANN (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">HERMES ATILIO MARIANI - DR. (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.4">HERMES GUEDES DA FONSECA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">HERMINIO GERVASIO - VEREADOR (BALNEARIO SANTA CLARA) (FL = 1.7)</option>
+    <option value="1.7">HERMINIO GERVASIO - VEREADOR (CABECUDAS) (FL = 1.7)</option>
+    <option value="2.0">HERMINIO JOSE FERREIRA NETO -SERV (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">HERTA THIEME - TRAVESSA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">HERTA THIEME - TRAVESSA (MARUI) (FL = 1.7)</option>
+    <option value="1.7">HERTA THIEME - TRAVESSA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">HERVAL DO OESTE (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">HERYK FELLIPE DE OLIVEIRA PEREIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">HIBISCOS - DOS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">HIDELBRANDO JOSE DA SILVA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">HILDA BELLA CRUZ DA SILVA (FAZENDA) (FL = 1.7)</option>
+    <option value="2.0">HILDA BREITENBAUCH (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="3.3">HILDEBRANDO JORGE SILVA (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">HILDO SILVA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.1">HORACIO RAMOS GONZAGA - VEREADOR (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.2">HORTENCIAS - DAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">HYGINA DE ANDRADE CORREA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">IBIRAMA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">IDALINO JOAO DE OLIVEIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">IDEZIO CORDEIRO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">IMARUI (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">IMBITUBA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">INACIO ROGERIO KUSTER NUNES (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="2.5">INDAIAL (DOM BOSCO) (FL = 2.5)</option>
+    <option value="2.5">INDAIAL (SAO JOAO) (FL = 2.5)</option>
+    <option value="2.5">INDAIAL (SÃO JOAO) (FL = 2.5)</option>
+    <option value="2.5">INDAIAL (SAO JUDAS) (FL = 2.5)</option>
+    <option value="1.4">INDEPENDENCIA - AVENIDA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">INESIA NOVELLETO - PROFESSORA (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.7">IOLANDA ARDIGO (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">IOLANDO BENVENUTTI JUNIOR (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">IRENE BONANOMI DA SILVA (RESSACADA) (FL = 1.7)</option>
+    <option value="1.7">IRENE DA SILVA PICKERING (CABECUDAS) (FL = 1.7)</option>
+    <option value="2.5">IRINEU BORNHAUSEN (BARRA DO RIO) (FL = 2.5)</option>
+    <option value="2.5">IRINEU BORNHAUSEN (CENTRO) (FL = 2.5)</option>
+    <option value="2.5">IRINEU BORNHAUSEN (SAO JOAO) (FL = 2.5)</option>
+    <option value="2.5">IRINEU BORNHAUSEN (VILA OPERARIA) (FL = 2.5)</option>
+    <option value="2.5">IRINEU BORNHAUSEN - PRACA (CENTRO) (FL = 2.5)</option>
+    <option value="1.0">IRINEU MARIA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">IRMA MARIA ZELIA (FAZENDA) (FL = 1.2)</option>
+    <option value="1.7">ISAAC JOSÉ DE SOUZA (RESSACADA) (FL = 1.7)</option>
+    <option value="1.0">ISMAEL ORLANDO EVARISTO (MURTA) (FL = 1.0)</option>
+    <option value="1.0">ISOLINA TRAINOTTI ORSI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">ISRAEL DE ALMEIDA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">ITAIPAVA - AVENIDA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.1">ITAMAR BRUNO DE CARVALHO (MURTA) (FL = 1.1)</option>
+    <option value="1.2">ITAPIRANGA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">ITUPORANGA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.1">IVANA WERNER (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.4">IVO STEIN FERREIRA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">IVO WERNER (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.5">IZABEL RAMOS FABENI (SAO JOAO) (FL = 2.5)</option>
+    <option value="2.5">IZABEL RAMOS FABENI (VILA OPERARIA) (FL = 2.5)</option>
+    <option value="1.7">IZAURA DALAGO (VILA OPERARIA) (FL = 1.7)</option>
+    <option value="2.0">IZIDORO RAIMUNDO DE OLIVEIRA (CENTRO) (FL = 2.0)</option>
+    <option value="1.4">JACI RAMOS (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">JACINTHO FRANCISCO DOS SANTOS (FAZENDA) (FL = 1.2)</option>
+    <option value="2.0">JACO MOLERI - TRAVESSA (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">JACOB ARDIGO (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">JACOB EUGENIO LAMIN (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">JACY MARIA DA SILVA KRAUEL (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">JAIME DE BARROS CAMARA - DON (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.4">JAIME FERNANDES VIEIRA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">JAIME PEDRO ALVES (CAMPECHE) (FL = 1.0)</option>
+    <option value="1.7">JAIME SEBASTIAO CARDOZO - BECO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">JARBAS GOMES DA SILVA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">JASMINS - DOS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">JASSAO DOS SANTOS (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">JASSAO DOS SANTOS - SERVIDAO AO LADO DO Nº 494 (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">JAZIEL JOSE ROSA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">JEFERSON NUNES (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.5">JEREMIAS CALDEIRA (CABECUDAS) (FL = 2.5)</option>
+    <option value="1.2">JOACABA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">JOANICO - BECO DO (FAZENDA) (FL = 1.2)</option>
+    <option value="1.2">JOAO ALVES DE OLIVEIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">JOAO AMERICO WATZKO - DR. (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.5">JOAO ANGELINO LOPES JR - VER (CENTRO) (FL = 2.5)</option>
+    <option value="1.7">JOAO ANTONIO AZEVEDO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">JOAO ANTONIO DE OLIVEIRA (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.2">JOAO ARDIGO (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">JOAO ASCENDINO LAMIM (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.0">JOAO BAPTISTA (SALSEIROS) (FL = 1.0)</option>
+    <option value="2.0">JOAO BATISTA REUS - TRAV PE (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">JOAO BATISTA VIEIRA (FAZENDA) (FL = 1.7)</option>
+    <option value="2.5">JOAO BAUER (CENTRO) (FL = 2.5)</option>
+    <option value="2.0">JOAO BAUER - BECO 1 (CENTRO) (FL = 2.0)</option>
+    <option value="2.5">JOAO BAUER JUNIOR (CABECUDAS) (FL = 2.5)</option>
+    <option value="1.2">JOAO BENTO - TRAVESSA (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="1.0">JOAO BERTOLDO DA ROSA (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.0">JOAO BORGES REGIS (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.2">JOAO CAMILO VICENTE (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.1">JOAO CIRILO DA CUNHA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">JOAO CUNHA (FAZENDA) (FL = 1.2)</option>
+    <option value="1.7">JOAO DA ROCHA MELLO - ENG (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.0">JOAO DALMOLIM (CANHANDUBA) (FL = 1.0)</option>
+    <option value="1.0">JOAO DALMOLIM (RESSACADA/CARVALHO) (FL = 1.0)</option>
+    <option value="1.2">JOAO DOMINGOS PEREIRA (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.1">JOAO EMILIANO DA SILVA (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.2">JOAO FERNANDES VIEIRA JUNIOR (FAZENDA) (FL = 1.2)</option>
+    <option value="1.7">JOAO FRANCISCO DOS PRAZERES JUNIOR (FAZENDA) (FL = 1.7)</option>
+    <option value="1.1">JOAO GALVAO FERNANDES (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="2.5">JOAO GAYA (VILA OPERARIA) (FL = 2.5)</option>
+    <option value="1.0">JOAO GOTTARDI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">JOAO GOULART - PRESIDENTE (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.0">JOAO GREGORIO DA SILVA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">JOAO HIPOLITO GONCALVES (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.7">JOAO HONORIO DE MIRANDA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">JOAO JOAQUIM DA COSTA - SERV (SAO JOAO) (FL = 1.7)</option>
+    <option value="2.0">JOAO JOHANNY DE ALCANTARA (FAZENDINHA) (FL = 2.0)</option>
+    <option value="1.1">JOAO JOSE DIAS (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.2">JOAO JOSE RODRIGUES (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.7">JOAO LADISLAU TABALIPA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">JOAO LAURENTINO DAS NEVES (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">JOAO LUIZ COELHO (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.7">JOAO LUIZ GONCALVES (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">JOAO LUIZ MEDEIROS (FAZENDA) (FL = 1.7)</option>
+    <option value="1.0">JOAO MAESTRI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.4">JOAO MAGALHAES (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">JOAO MANOEL DA SILVA (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.2">JOAO MANUEL FRANCISCO - SERV (FAZENDA) (FL = 1.2)</option>
+    <option value="1.2">JOAO MARCELINO MACHADO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">JOAO MARIA DA VEIGA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.2">JOAO MARTINS - TRAVESSA (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="1.7">JOAO MATIAS HEIL (FAZENDA) (FL = 1.7)</option>
+    <option value="2.0">JOAO MELO - SERVIDAO (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">JOAO MELQUIADES FERNANDES (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">JOAO NAPOLEAO DE SOUZA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.4">JOAO OLEGARIO DUTRA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">JOAO PINTO AMARAL (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">JOAO REIPERT DE AMORIM (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">JOAO RODI (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">JOAO RODRIGUES DE ALMEIDA - PE (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="2.0">JOAO SANDRI - TRAVESSA (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">JOAO SANTANA - TRAVESSA (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="1.0">JOAO THOMAZ PINTO (CANHANDUBA) (FL = 1.0)</option>
+    <option value="1.0">JOAO TIAGO DE AZEVEDO (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.7">JOAO VECHANI (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">JOAO VERGILINO ALVES (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">JOAO VIEIRA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">JOAO VIEIRA RAMOS (SALSEIROS) (FL = 1.0)</option>
+    <option value="2.0">JOAO WOLLINGER (FAZENDA) (FL = 2.0)</option>
+    <option value="1.0">JOAQUIM DE SOUZA MEDEIROS (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">JOAQUIM FALCO URIARTE (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">JOAQUIM FERNANDES (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">JOAQUIM GERALDINO DE BITTENCOURT (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.7">JOAQUIM JOSE DE FREITAS (SAO JOAO) (FL = 1.7)</option>
+    <option value="2.0">JOAQUIM LOPES CORREA (CENTRO) (FL = 2.0)</option>
+    <option value="1.0">JOAQUIM LUIZ (FAZENDA) (FL = 1.0)</option>
+    <option value="5.0">JOCA BRANDAO - AVENIDA (CENTRO) (FL = 5.0)</option>
+    <option value="5.0">JOCA BRANDAO - AVENIDA (FAZENDA) (FL = 5.0)</option>
+    <option value="2.5">JOCA BRANDAO - AVENIDA/BECO (FAZENDA) (FL = 2.5)</option>
+    <option value="1.7">JOCA LAMIM (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">JOEL JOSE FERREIRA (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="5.0">JOINVILLE (CENTRO) (FL = 5.0)</option>
+    <option value="1.2">JORDINA DE LIMA (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="2.0">JORGE FERNANDES (FAZENDINHA) (FL = 2.0)</option>
+    <option value="1.2">JORGE FERNANDO PEREIRA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.0">JORGE LACERDA - RODOVIA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">JORGE LACERDA - RODOVIA (SALSEIROS) (FL = 1.0)</option>
+    <option value="2.0">JORGE MATTOS (CENTRO) (FL = 2.0)</option>
+    <option value="2.0">JORGE MATTOS - TRAVESSA (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">JORGE S FILHO (FAZENDA) (FL = 1.2)</option>
+    <option value="1.7">JORGE SANTOS DE MACEDO (DOM BOSCO) (FL = 1.7)</option>
+    <option value="5.0">JORGE TZACHEL (FAZENDA) (FL = 5.0)</option>
+    <option value="1.0">JOSE ADIL DE LIMA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">JOSE AGRIPINO CORBETA (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.7">JOSE ANSELMO DA SILVA (RESSACADA) (FL = 1.7)</option>
+    <option value="1.0">JOSE BERNARDINO FILHO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="5.0">JOSE BONIFACIO MALBURG - DR. (CENTRO) (FL = 5.0)</option>
+    <option value="2.0">JOSE BRANDAO (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.7">JOSE CANDIDO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">JOSE CANDIDO - BECO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">JOSE CARLOS DA SILVA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">JOSE CARLOS DE ANDRADE (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.1">JOSE CARLOS FELICIO (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.2">JOSE CARLOS MENDONCA - VEREADOR (CARVALHO) (FL = 1.2)</option>
+    <option value="1.7">JOSE CORREIA (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.7">JOSE CUGNIER (RESSACADA) (FL = 1.7)</option>
+    <option value="1.1">JOSE DA SILVA LIMA JR (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.7">JOSE DARCY DA SILVA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.4">JOSE DE ALENCAR (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">JOSE DOMINGOS MACHADO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">JOSE DOMINGOS MAFRA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">JOSE ESTEVAO PACHECO (FAZENDINHA) (FL = 1.7)</option>
+    <option value="2.5">JOSE EUGENIO MULLER - AVENIDA (DOM BOSCO) (FL = 2.5)</option>
+    <option value="2.5">JOSE EUGENIO MULLER - AVENIDA (SAO JUDAS) (FL = 2.5)</option>
+    <option value="2.5">JOSE EUGENIO MULLER - AVENIDA (VILA OPERARIA) (FL = 2.5)</option>
+    <option value="2.0">JOSE FERREIRA DA SILVA (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">JOSE FRANCISCO CONSTANTINO (CENTRO) (FL = 1.2)</option>
+    <option value="1.0">JOSE FRANCISCO MAESTRI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.1">JOSE FRANCISCO MATEUS (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.2">JOSE FRANCISCO REIS (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="2.5">JOSE GALL (DOM BOSCO) (FL = 2.5)</option>
+    <option value="1.2">JOSE GALL (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.2">JOSE GENOARIO JUNKES (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">JOSE GOPERTINO CHAVES (FAZENDA) (FL = 1.7)</option>
+    <option value="1.0">JOSE GOTTARDI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">JOSE HENRIQUE FLORES (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.0">JOSE HERMINDO ROSA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">JOSE ISALTINO DE BARROS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">JOSE JOAO CORREA - AVENIDA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="2.0">JOSE JOAQUIM DOS SANTOS (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">JOSE JULIO DA ROCHA (FAZENDA) (FL = 1.2)</option>
+    <option value="1.4">JOSE LOPES (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">JOSE LUCIANO PEREIRA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.1">JOSE LUIZ MARCELINO (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.1">JOSE LUIZ MARCELINO (MURTA) (FL = 1.1)</option>
+    <option value="3.3">JOSE MANOEL DA SILVA (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">JOSE MANOEL DA SILVA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">JOSE MARCAL DUTRA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">JOSE MARIA DA VEIGA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">JOSE MARIANO FURTADO (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.0">JOSE MEDEIROS VIEIRA - AV DR. (BALNEARIO SANTA CLARA) (FL = 1.0)</option>
+    <option value="1.7">JOSE MENESCAU DO MONTE - DR (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.0">JOSE MERLO (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.0">JOSE MONTAGNA (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.0">JOSE NATAL CUGIK (RIO NOVO) (FL = 1.0)</option>
+    <option value="1.7">JOSE NERI DOS SANTOS (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">JOSE PALMEIRA NETO - TRAV VER (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">JOSE PATROCINIO ZAGUINI (FAZENDA) (FL = 1.7)</option>
+    <option value="2.0">JOSE PAULO DA SILVA (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">JOSE PEREIRA LIBERATO (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">JOSE PEREIRA LIBERATO (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">JOSE PEREIRA LIBERATO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">JOSE PEREIRA LIBERATO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">JOSE PEREIRA LIBERATO - SERVIDAO AO LADO DO Nº 315 (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">JOSE PEZZINI (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">JOSE PINTO D`AMARAL (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">JOSE QUIRINO (SAO JOAO) (FL = 1.7)</option>
+    <option value="2.0">JOSE RAIMUNDO DE OLIVEIRA (CENTRO) (FL = 2.0)</option>
+    <option value="1.0">JOSE RAIMUNDO DE OLIVEIRA (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.4">JOSE RAMOS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">JOSE ROBERTO SAGAZ (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">JOSE ROSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="2.0">JOSE RUSSI (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">JOSE SANTANA FILHO - SERVIDAO (FAZENDA) (FL = 1.2)</option>
+    <option value="1.4">JOSE SANTANGELO (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">JOSE SASDELLI (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">JOSE SIMPLICIO DE OLIVEIRA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.5">JOSE SIQUEIRA (DOM BOSCO) (FL = 2.5)</option>
+    <option value="2.5">JOSE SIQUEIRA (RESSACADA) (FL = 2.5)</option>
+    <option value="1.7">JOSE TEDEO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">JOSE TOMAZ DA ROCHA (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.1">JOSÉ VASQUEZ MARTINEZ (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.7">JOSE VIEIRA - SERVIDAO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">JOSE VITTI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">JOVELINO GENEROSO LEITE (MURTA) (FL = 1.0)</option>
+    <option value="1.4">JOVITA DA COSTA RAMOS (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">JOVITA RODRIGUES MACHADO (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.4">JOVITO ANACLETO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">JUAREZ JOSE MENDES (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">JUCA CESARIO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">JULIA BUAZIR ATANAZIO (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.7">JULIA RAULINA CHAVES (FAZENDA) (FL = 1.7)</option>
+    <option value="1.1">JULIO BRODEBERCKER - TRAVESSA (MARUI) (FL = 1.1)</option>
+    <option value="1.7">JULIO CESAR MEDEIROS -TRAV ESC (VILA OPERARIA) (FL = 1.7)</option>
+    <option value="5.0">JULIO COUTINHO (FAZENDA) (FL = 5.0)</option>
+    <option value="1.7">JULIO JOAQUIM FERNANDES (FAZENDA) (FL = 1.7)</option>
+    <option value="3.3">JULIO KUMM - CONSELHEIRO (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">JULIO WILLERDING (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">JULIO WIPPEL - TRAVESSA (NOVA BRASILIA) (FL = 1.7)</option>
+    <option value="2.0">JUVENAL GARCIA (CENTRO) (FL = 2.0)</option>
+    <option value="5.0">JUVENCIO TAVARES D`AMARAL (CABECUDAS) (FL = 5.0)</option>
+    <option value="2.0">JUVENTINO LINHARES (CENTRO) (FL = 2.0)</option>
+    <option value="2.0">KARL RICHARD BREITENBUCH (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.2">KOBARG - TRAVESSA (CENTRO) (FL = 1.2)</option>
+    <option value="1.1">LACY GONCALVES DE SANTANA (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="2.5">LAGES (FAZENDA) (FL = 2.5)</option>
+    <option value="1.2">LAGES - BECO (FAZENDA) (FL = 1.2)</option>
+    <option value="2.5">LAGUNA (FAZENDA) (FL = 2.5)</option>
+    <option value="1.2">LAIR PAULO (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.7">LAUDEANO JOSE DE ALMEIDA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">LAUDELINA DIONISIO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">LAUDELINO DOS SANTOS - SERV (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">LAUDELINO JOAO DA VEIGA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">LAURA DOS SANTOS LAURINDO (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.0">LAURA REBELLO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">LAURO JOSÉ PEREIRA - AVENIDA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.0">LAURO JOSÉ PEREIRA - AVENIDA (MURTA) (FL = 1.0)</option>
+    <option value="5.0">LAURO MULLER (CENTRO) (FL = 5.0)</option>
+    <option value="2.5">LAURO MULLER (FAZENDA) (FL = 2.5)</option>
+    <option value="1.7">LAURO MULLER - BECO 2 (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">LAURO MULLER - BECO 3 (FAZENDA) (FL = 1.7)</option>
+    <option value="3.3">LAURO MUSSI - DOUTOR (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.4">LAUSIMAR LAUS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">LEOBALDO CUNHA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">LEOBERTO LEAL - DR. (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">LEODEGARIO PEDRO DA SILVA - AV (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.0">LEONARDO SEVERO PEREIRA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">LEONARDO TETO (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.0">LEONCIO JOAO CORDEIRO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">LEONEL MIGUEL DOS SANTOS (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.7">LEONEL PEREIRA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">LEONIDIA SILVA WIPPEL (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">LEONOR ROGGE (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">LEOPOLDO CRISTIANO DE MIRANDA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">LEOPOLDO HESS (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">LEOPOLDO TERNES (FAZENDA) (FL = 1.7)</option>
+    <option value="1.7">LEOPOLDO WERNER (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">LEOPOLDO ZARLING (RESSACADA) (FL = 1.7)</option>
+    <option value="1.0">LIBORIO CUNHA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">LICIA ROSA DUARTE (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.7">LICO AMARAL (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.1">LIDIA PUEL PEIXER (MURTA) (FL = 1.1)</option>
+    <option value="1.2">LILA HEUSI (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.7">LINDOLPHO DE AZEVEDO COUTINHO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">LINO DO AMARAL (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">LINO JOSE DA SILVA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">LISBERTO JOAO POTTER - TRAV (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="1.2">LOT JARDIM DANIELLI AV PROJ. (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.0">LOURENCO CALIRI - VER (MURTA) (FL = 1.0)</option>
+    <option value="1.7">LOURENCO CARDOSO VALENTE - SERVIDAO (FAZENDA) (FL = 1.7)</option>
+    <option value="2.5">LUCI CANZIANI (BALNEARIO SANTA CLARA) (FL = 2.5)</option>
+    <option value="3.3">LUCIA SERAFIM DE OLIVEIRA (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">LUCIANO PINHEIRO DA SILVA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">LUCIO CORREA MENDONCA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.0">LUIS ROUSCH (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">LUISA PEREIRA GONCALVES (CENTRO) (FL = 1.2)</option>
+    <option value="1.2">LUIZ AUGUSTO TROJAN - ARQUITETO (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.7">LUIZ BEDUSCHI (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.2">LUIZ BELA CRUZ (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.0">LUIZ BERLIM (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">LUIZ BONIFACIO PINTO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">LUIZ BOZZANO - SERVIDAO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">LUIZ CARLOS MACHADO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">LUIZ CASTRO (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.1">LUIZ DA SILVA (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.7">LUIZ DE GREGORIO (FAZENDA) (FL = 1.7)</option>
+    <option value="1.0">LUIZ DE QUEIROZ GAUDERETO (MURTA) (FL = 1.0)</option>
+    <option value="1.0">LUIZ ERBANI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">LUIZ FELLIPE DA C ZACHARIAS (MURTA) (FL = 1.0)</option>
+    <option value="1.4">LUIZ GALLOTTI - AV MINISTRO (CIDADE NOVA) (FL = 1.4)</option>
+    <option value="1.0">LUIZ GOTTARDI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">LUIZ JOSE BENTO DA SILVA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.1">LUIZ JOSE MEDEIROS (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.1">LUIZ LEONCIO BUCHELE (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.4">LUIZ LOPES GONZAGA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.4">LUIZ LOPES GONZAGA - BECO (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.0">LUIZ PANCA (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.2">LUIZ ROBERTO CASAS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">LUIZ SEBASTIAO AMORIM (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">LUIZ SETIMO TRAINOTTI (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.2">LUIZ SILVA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.0">LUIZ SOARES - VEREADOR (FAZENDA) (FL = 2.0)</option>
+    <option value="1.2">LUIZA PEREIRA CARDOSO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.0">LUIZA SOTERIO KEUNECKE (CENTRO) (FL = 2.0)</option>
+    <option value="1.4">MACEIO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">MAFRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">MANAUS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">MANOEL ANASTACIO PAULO (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.7">MANOEL ANIBAL PEREIRA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">MANOEL BANDEIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">MANOEL BERNARDES (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">MANOEL BERNARDO DA SILVA (FAZENDA) (FL = 1.2)</option>
+    <option value="1.2">MANOEL CARDOZO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">MANOEL CIPRIANO FURTADO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">MANOEL CORREA (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.0">MANOEL CORREA - BECO (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.0">MANOEL CORREA - FUNDOS (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.0">MANOEL DA SILVA (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.0">MANOEL DARIO CUSTODIO (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.7">MANOEL DONO MORGADO (FAZENDA) (FL = 1.7)</option>
+    <option value="2.0">MANOEL F DO NASCIMENTO - SERV (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">MANOEL FERNANDES VIEIRA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">MANOEL FRANCISCO COELHO (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.1">MANOEL GAYA (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.1">MANOEL GAYA (MARUI) (FL = 1.1)</option>
+    <option value="1.0">MANOEL GENEROSO DE SOUZA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">MANOEL GERMANO MIRANDA - TRAV (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="1.7">MANOEL JOAQUIM COELHO (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">MANOEL JOSE DE SOUZA - TRAV (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.2">MANOEL JOSE DOS SANTOS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">MANOEL MELLO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">MANOEL MOACIR WERNER (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.1">MANOEL OLIVIO THEODORO (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">MANOEL PEDRO SIMAS (MURTA) (FL = 1.0)</option>
+    <option value="1.0">MANOEL RODOLFO CORDEIRO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">MANOEL VARGAS - TRAVESSA (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="5.0">MANOEL VIEIRA GARCAO (CENTRO) (FL = 5.0)</option>
+    <option value="1.7">MANOEL ZEFERINO TEIXEIRA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">MARANHAO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">MARAVILHA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">MARCELINO PONCIANO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">MARCELINO RAMOS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">MARCELO ANTONIO CORDEIRO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">MARCIANO MARQUETTI (FAZENDA) (FL = 1.7)</option>
+    <option value="2.5">MARCILIO DIAS (CENTRO) (FL = 2.5)</option>
+    <option value="2.5">MARCIO FERREIRA DE MELLO E SILVA - AV (BALNEARIO SANTA CLARA) (FL = 2.5)</option>
+    <option value="1.0">MARCOS ALBINO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">MARCOS ALBINO (RIO DO MEIO) (FL = 1.0)</option>
+    <option value="1.2">MARCOS ANTONIO MULLER (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">MARCOS AURELIO SEARA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.7">MARCOS CASTELAIN - TRAVESSA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">MARCOS CASTELAIN - TRAVESSA (NOVA BRASILIA) (FL = 1.7)</option>
+    <option value="1.2">MARCOS GUSTAVO HEUSI (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="5.0">MARCOS KONDER - AV CORONEL (CENTRO) (FL = 5.0)</option>
+    <option value="5.0">MARCOS KONDER - AV CORONEL (FAZENDA) (FL = 5.0)</option>
+    <option value="1.2">MARGARIDA BERNADINA NICOLAU (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.0">MARGARIDA DALCOQUIO BITTENCOURT (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.2">MARGARIDA TAVARES (FAZENDA) (FL = 1.2)</option>
+    <option value="1.4">MARGINAL BR 101 - AVENIDA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">MARGINAL RIBEIRAO DA MURTA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.1">MARIA ALVES MAFRA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">MARIA CLAUDIA ADRIANO SOARES (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.1">MARIA CORREIA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">MARIA DA COSTA MARTINS (FAZENDA) (FL = 1.2)</option>
+    <option value="1.7">MARIA DA GLORIA (SAO JOAO) (FL = 1.7)</option>
+    <option value="3.3">MARIA DAS DORES SANTOS MULLER (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.0">MARIA DE SOUZA GONCALVES (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">MARIA DE SOUZA RAYMUNDO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">MARIA DO CARMO CUGIK (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.1">MARIA EDITH GONCALVES DA ROSA (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.7">MARIA FLORA CALDEIRA - DONA (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.2">MARIA FORTUNATA DA SILVA (FAZENDA) (FL = 1.2)</option>
+    <option value="1.0">MARIA GONCALVES PEREIRA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">MARIA GONCALVES PEREIRA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="2.0">MARIA ISAURA DA SILVA MULLER (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.0">MARIA LEANDRA DOS SANTOS (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.1">MARIA LUCIA DE AMORIM (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="2.0">MARIA LUIZA AMORIM HEUSI (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">MARIA LUIZA ETUR SILVA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">MARIA MARLY PITZ - PROFESSORA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">MARIA MARQUES RAMPELOTTI (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.1">MARIA MARQUES WERNER - AVENIDA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.7">MARIA MEDEIROS SIEMANN - DONA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.2">MARIA NILMA DA LUZ COSTA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">MARIA NUNES DA SILVA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">MARIA ODILIA DOS SANTOS DOMINGOS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">MARIA PESSOA ESPINDOLA (D CONTINHA) (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.1">MARIA RAMOS CARDOZO (MARUI) (FL = 1.1)</option>
+    <option value="1.2">MARIA SEDREZ (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.2">MARIA SERAFIM DOS SANTOS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">MARIA VERENA HEIL (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.0">MARIA ZELANDIA DIAS COSTA (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.2">MARIANGELA ROCHA FABENI (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.7">MARILDA ULTRAMARI GAU - VEREADORA (BALNEARIO SANTA CLARA) (FL = 1.7)</option>
+    <option value="1.4">MARIO BENTO DOS PASSOS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">MARIO CONCEICAO DE OLIVEIRA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">MARIO FERRARI (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">MARIO MELO - PROF (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">MARIO OLIMPIO CABRAL (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.4">MARIO REIS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">MARIO URIARTE - AVENIDA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">MARLI PAULA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">MARTHA SOUZA DA SILVA (SAO JOAO) (FL = 1.7)</option>
+    <option value="3.3">MARTIM PESCADOR (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="2.0">MASCARENHAS PASSOS (CENTRO) (FL = 2.0)</option>
+    <option value="1.0">MATHIAS CHRISPIM FERREIRA (SALSEIROS) (FL = 1.0)</option>
+    <option value="2.0">MATHIAS OLINGER - BECO (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">MATHIAS PALM (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.7">MATIAS KLOCK (SAO JUDAS) (FL = 1.7)</option>
+    <option value="2.0">MATIAS KLOCK (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.4">MATO GROSSO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.1">MAURICIO DA SILVA (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.7">MAURICIO FURTADO - TRAVESSA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.1">MAURICIO PACHECO (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.2">MAURINA CORREA VAILATTE (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">MAURINA ROSA CANDIDO (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.2">MAURINO VIEIRA (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.2">MAURINO VIEIRA - BECO (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.1">MAURO CARLOS BERTEMES (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.7">MAX (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">MAX HOIER (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.4">MAX TAVARES D`AMARAL (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">MENINA ROSANA DA SILVA (SAO JOAO) (FL = 1.7)</option>
+    <option value="3.3">MIGUEL FRANCISCO BORGES (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">MIGUEL KUNIFAS (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.0">MIGUEL MAESTRI (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">MIGUEL WANDERHEC (FAZENDA) (FL = 1.2)</option>
+    <option value="1.2">MILTON JAQUES (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.0">MILTON RIBEIRO DA LUZ - VER (FAZENDA) (FL = 2.0)</option>
+    <option value="2.0">MILTON RIBEIRO DA LUZ - VER (FAZENDINHA) (FL = 2.0)</option>
+    <option value="1.4">MINAS GERAIS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.1">MINELVINO MANOEL GONCALVES (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">MINERAL (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.7">MODESTO FERNANDES VIEIRA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.1">MONICA GIZELE ELISIO (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">MONTE CASTELO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.0">MOREIRA - BECO DO (CENTRO) (FL = 2.0)</option>
+    <option value="2.0">MORITZ - BECO 1 (CENTRO) (FL = 2.0)</option>
+    <option value="1.0">MOYSES JERONYMO DE OLIVEIRA (LIMOEIRO) (FL = 1.0)</option>
+    <option value="3.3">NABOR RUSSI - VEREADOR (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.1">NAHOR CARDOZO (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.1">NAIR CARDOSO PRATEAT (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.0">NAIR DA SILVA EVARISTO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">NANCY PATINO REISER (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">NARCISA MARIA VITORINO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.4">NATAL - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">NATANAEL ALEXANDRE CAGNETTI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">NAVEGANTES (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">NAZARIO THOME LINHARES - TRAV (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">NELLY OSMAR C PICCOLI - DR (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.1">NELSON AUGUSTO SOUZA SCHIEFLER (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.2">NELSON MANOEL SIMAO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.4">NELSON RAUL REBELLO (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">NEMESIO DONATO SIMAS (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">NEOFLIDES VIEIRA WENDHAUSEN (FAZENDA) (FL = 1.7)</option>
+    <option value="1.1">NEREU RAMOS (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.1">NEREU RAMOS (MURTA) (FL = 1.1)</option>
+    <option value="2.5">NEREU RAMOS - DR. (CENTRO) (FL = 2.5)</option>
+    <option value="1.4">NESTOR DOS SANTOS - VEREADOR (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.1">NEWTON PRADO BAIAO (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.7">NEY VIANNA ZAGUINI - DONA (BALNEARIO SANTA CLARA) (FL = 1.7)</option>
+    <option value="1.2">NICOLAU BURGART - TRAVESSA (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="1.4">NILO BITTENCOURT - AVENIDA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">NILO PRAZERES - SERVIDAO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">NILO SIMAS - AVENIDA VEREADOR (CIDADE NOVA) (FL = 1.4)</option>
+    <option value="1.4">NILSON EDSON DOS SANTOS - ARQ. (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.1">NILTON DE ANDRADE (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">NILTON SANTOS DA SILVA (MURTA) (FL = 1.0)</option>
+    <option value="1.0">NILZA ALVES DA SILVA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">NIVALDO DETOIE (RESSACADA) (FL = 1.7)</option>
+    <option value="1.0">NONO EMILIO DALCOQUIO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">NORBERTO CAPRESTANO DA CUNHA (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.4">NOSSA SENHORA DE FATIMA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">NOVA TRENTO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="3.3">OCTACILIO DA SILVA COSTA (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">ODAIR SILVA DA ROSA - D LOCA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">ODILIO GARCIA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">ODILIO PEREIRA (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.2">ODINEI LINHARES (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.0">OLÂMPIO FRANCISCO VICENTE (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">OLARIA PEREIRA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">OLAVO BILAC (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">OLAVO MURILO SEARA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">OLEGARIO SOUZA JUNIOR (CENTRO) (FL = 1.2)</option>
+    <option value="1.4">OLGA DAS NEVES MONTIBELLER (CORDEIROS) (FL = 1.4)</option>
+    <option value="2.0">OLGA DE LEMOS LIRA (CENTRO) (FL = 2.0)</option>
+    <option value="1.2">OLGA GERN PEREIRA (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.7">OLGA MUSSI DIETRICH (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">OLIMPIO MANOEL CABRAL (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="5.0">OLIMPIO MIRANDA JUNIOR (CENTRO) (FL = 5.0)</option>
+    <option value="2.0">OLINDINA FRANCISCA DA SILVA - PROF. (FAZENDA) (FL = 2.0)</option>
+    <option value="2.0">OLINDINA FRANCISCA DA SILVA - PROF. (FAZENDINHA) (FL = 2.0)</option>
+    <option value="1.7">OLINDO RODOLFO DE SOUZA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">OLIVIA BENEDITA BATISTOTI (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">OLÍVIO FRANCISCO BORGES (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.7">ONDINO G. DA SILVA - PROF (RESSACADA) (FL = 1.7)</option>
+    <option value="1.4">ONILDO REIS (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">ONIX - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">ONOFRE JOSE CORREA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="2.5">ONZE DE JUNHO (FAZENDA) (FL = 2.5)</option>
+    <option value="1.0">ORLANDINA AMALIA PIRES CORREA (MURTA) (FL = 1.0)</option>
+    <option value="1.4">ORLANDO WIPPEL (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">ORLEANS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">ORQUIDEAS - DAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">OSCAR MARTINS DA SILVA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">OSCAR PRAUN RODRIGUES (FAZENDA) (FL = 1.2)</option>
+    <option value="1.1">OSCAR SILVA JUSTINO (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">OSMAR ANTONIO CORREA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">OSMAR JORDINO ALEXANDRE (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">OSMAR NUNES - DOUTOR (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">OSNI ANTONIO CORREA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">OSNI JOSE JACINTO (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">OSNI MELO (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.1">OSVALDIR CARDOSO (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.2">OSVALDO BECKER (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.0">OSVALDO BERTEMES (FAZENDA) (FL = 2.0)</option>
+    <option value="2.0">OSVALDO BERTEMES (FAZENDINHA) (FL = 2.0)</option>
+    <option value="1.4">OSVALDO CRUZ (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.1">OSVALDO CUNHA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="2.5">OSVALDO REIS - AVENIDA (BALNEARIO SANTA CLARA) (FL = 2.5)</option>
+    <option value="2.5">OSVALDO REIS - AVENIDA (FAZENDA) (FL = 2.5)</option>
+    <option value="2.5">OSVALDO REIS - AVENIDA (FAZENDINHA) (FL = 2.5)</option>
+    <option value="1.0">OSWALDO CORREA DE MENDONCA (FAZENDA) (FL = 1.0)</option>
+    <option value="1.4">OSWALDO CRUZ (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">OSWALDO ESPINDOLA (RESSACADA) (FL = 1.7)</option>
+    <option value="1.0">OSWALDO LEAL (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">OSWALDO PEREIRA (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.2">OTAVIANO FELLER (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">OTAVIO CESARIO PEREIRA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">OTAVIO MULLER (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.0">OTHON JOSE NOGUEIRA - INSPETOR (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.2">OTILIA DAMASCENO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.0">OTILIO DALSOQUIO (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.2">OTTO HOIER (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">OTTO HOIER - BECO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">OTTO PRAUM (SAO JOAO) (FL = 1.7)</option>
+    <option value="2.5">OTTO RENAUX (CABECUDAS) (FL = 2.5)</option>
+    <option value="1.2">PALHOCA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">PALMIR FRANCISCO DIAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">PANTALEAO FRANCISCO CASAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">PAPANDUVA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">PAPOULAS - DAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.4">PARA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">PARAIBA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">PARANA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">PARTICULAR (ITAPOA) (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.0">PASCO RAIMUNDO VICENTE (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.1">PAULO ARIDIO DE FRANCA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">PAULO BAGATOLI (MURTA) (FL = 1.0)</option>
+    <option value="3.3">PAULO BATSCHAUER (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="3.3">PAULO BAUER - AV PREFEITO (CENTRO) (FL = 3.3)</option>
+    <option value="1.2">PAULO CANTIDIO DA SILVA - AVENIDA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="2.5">PAULO CARAMURU DA SILVA (CENTRO) (FL = 2.5)</option>
+    <option value="1.4">PAULO CONDLA - PADRE (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.0">PAULO DEMARCH (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">PAULO EUZEBIO DE SOUZA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">PAULO FUCK - TRAVESSA (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="2.5">PAULO HERBST (CABECUDAS) (FL = 2.5)</option>
+    <option value="1.2">PAULO HERBST - BECO (CABECUDAS) (FL = 1.2)</option>
+    <option value="1.2">PAULO HOIER (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.7">PAULO IRINEU WERNER (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.4">PAULO KLEIS JUNIOR (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">PAULO MALBURG - TRAVESSA (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="1.0">PAULO ROBERTO DOS SANTOS (MURTA) (FL = 1.0)</option>
+    <option value="1.4">PAULO RODRIGUES PEREIRA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">PAULO VALMOR SEVERINO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">PEDRO AMARO PEREIRA - EXPEDICIONARIO (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.0">PEDRO ANGIOLETTI (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.7">PEDRO ANTONIO FAYAL (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">PEDRO ANTONIO FAYAL - BECO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">PEDRO BATISTA DA SILVA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.4">PEDRO BENTO REIS (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.7">PEDRO CAMILO DA SILVA (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">PEDRO CAMILO VICENTE (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">PEDRO CAMILO VICENTE - BECO (CORDEIROS) (FL = 1.4)</option>
+    <option value="3.3">PEDRO CORREA DA SILVA (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.2">PEDRO COSCHELA - SERVIDAO (CENTRO) (FL = 1.2)</option>
+    <option value="1.4">PEDRO CRISTIANO DE MIRANDA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="5.0">PEDRO FERREIRA (CENTRO) (FL = 5.0)</option>
+    <option value="1.0">PEDRO GODOI FILHO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">PEDRO GUERREIRO JUNIOR (FAZENDA) (FL = 1.7)</option>
+    <option value="1.1">PEDRO JERONIMO SEDREZ (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">PEDRO JOAO DE SOUZA (MURTA) (FL = 1.0)</option>
+    <option value="1.2">PEDRO JOAO DE SOUZA FILHO - VER (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.0">PEDRO JOAO GALVAO - TRAVESSA (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.7">PEDRO JOAQUIM VIEIRA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">PEDRO JOSE JOAO (NSA SRA DAS GRACAS) (FL = 1.2)</option>
+    <option value="1.0">PEDRO JOSE JOAO - BECO 1 (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.0">PEDRO JOSE JOAO - BECO 2 (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.0">PEDRO JOSE PINTO (CANHANDUBA) (FL = 1.0)</option>
+    <option value="1.7">PEDRO LUIZ DA SILVA (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.0">PEDRO MACHADO JUNIOR (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">PEDRO MANOEL MOREIRA (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.0">PEDRO NORBERTO ROSA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.7">PEDRO PEREIRA MAFRA (RESSACADA) (FL = 1.7)</option>
+    <option value="1.7">PEDRO RANGEL (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.7">PEDRO REBELLO (FAZENDA) (FL = 1.7)</option>
+    <option value="1.0">PEDRO REIS (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.1">PEDRO RITA DOS PASSOS (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.7">PEDRO SALLES DOS SANTOS (FAZENDINHA) (FL = 1.7)</option>
+    <option value="1.0">PEDRO SANSAO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.1">PEDRO TEIXEIRA DE MELLO (MARUI) (FL = 1.1)</option>
+    <option value="1.2">PEDRO TEODORO FERNANDES (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.7">PEDRO TEODORO FERNANDES (RESSACADA) (FL = 1.7)</option>
+    <option value="1.0">PEDRO WANZUITA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">PEDRO WINTER (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.1">PEDRO ZAGHENI (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="3.3">PELICANO (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">PENHA - TRAVESSA (NOVA BRASILIA) (FL = 1.7)</option>
+    <option value="2.0">PEREIRA NETO (CENTRO) (FL = 2.0)</option>
+    <option value="2.0">PERFEITO JOSE DA SILVA (CENTRO) (FL = 2.0)</option>
+    <option value="1.4">PERNAMBUCO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">PERPETUA FARIAS KHNIS (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.1">PETER WALLNER (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">PETERSON ANDRE MACHADO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">PETUNIAS - DAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.4">PIAUI (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">PIERRE ESTANISLAU (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">PORTO UNIAO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">PORTO VELHO (CORDEIROS) (FL = 1.4)</option>
+    <option value="3.3">PRATICO ADOLFINHO LINDALVO COSTA (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">PRIMO ULLER (RESSACADA) (FL = 1.7)</option>
+    <option value="1.0">PROJETADA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">PROJETADA LOT. JOAO WERNER SOBRINHO (CABECUDAS) (FL = 1.2)</option>
+    <option value="1.0">PROTASIO WIPPEL (ITAIPAVA) (FL = 1.0)</option>
+    <option value="2.5">QUINTINO BOCAIUVA (CABECUDAS) (FL = 2.5)</option>
+    <option value="1.0">RACHEL LIBERATO MEYER (CORDEIROS) (FL = 1.0)</option>
+    <option value="3.3">RACHEL WERNER (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.2">RAIMUNDO BINDER (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.2">RAUL DE SOUZA (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">RAUL HEUSI DA SILVA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">RAUL MACHADO (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.4">RECIFE - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="2.0">REINALDO DE BRITO - TRAVESSA (VILA OPERARIA) (FL = 2.0)</option>
+    <option value="1.7">REINALDO PEREIRA DA SILVA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">REINALDO SCHMITHAUSEN - DR. - AVENIDA (CORDEIROS) (FL = 1.7)</option>
+    <option value="1.4">REINALDO SCHMITHAUSEN - DR. - AVENIDA (SALSEIROS) (FL = 1.4)</option>
+    <option value="3.3">RENATO MELIM CUNHA (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">RENATO VICTORINO - ESTUDANTE (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.0">RENILDO MARCOS MORETON (SALSEIROS) (FL = 1.0)</option>
+    <option value="1.0">REYNOLDO MERLO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">REYNOLDO MERLO (KM 12) (FL = 1.0)</option>
+    <option value="1.7">RICARDO GABRIEL BAUER (RESSACADA) (FL = 1.7)</option>
+    <option value="2.0">RICARDO KEUNECKE (CENTRO) (FL = 2.0)</option>
+    <option value="3.3">RICHARD GALM (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">RIO ARAGUAIA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.4">RIO BRANCO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">RIO DE JANEIRO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">RIO DO SUL (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">RIO FORTUNA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">RIO GRANDE DO NORTE (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">RIO GRANDE DO SUL (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">RIO JURUA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.2">RIO NEGRINHO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.1">RIVO LAFAIETE DE OLIVEIRA (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">ROBERTO MANOEL TOMAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.7">ROBERTO MELLO DE FARIA - JORN (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.0">RODOLFO BOSCO (CORDEIROS) (FL = 1.0)</option>
+    <option value="1.2">RODOLFO KUCKER (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">RODOLFO TREDER (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">RODRIGO FERNANDES DA ROSA (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.1">ROMUALDO MANOEL FAGUNDES (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.4">ROMUALDO SEDREZ (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">RONDONIA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">ROQUE JOSE BOSCO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.0">ROSA MARCELINA SILVA (CENTRO) (FL = 2.0)</option>
+    <option value="1.4">ROSA ORSI DALCOQUIO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">ROSA SCHAEFER DO NASCIMENTO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">ROSALIA PEDRONI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">ROSALINA LINHARES CABRAL (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.2">ROSELI MARIA COELHO (NOVA BRASILIA) (FL = 1.2)</option>
+    <option value="1.7">ROSENDO CLAUDINO DE FREITAS (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.1">ROSENDO JOSE CANDIDO - EXP (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">ROZA GRIMES (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">RUA AMELIA IZABEL COELHO (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">RUA ANTONIO CARLOS FIGUEREDO (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">RUA ARNOLDO SERAFIM (FAZENDA) (FL = 1.2)</option>
+    <option value="1.2">RUA DOMINGOS NUNES DOS SANTOS (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">RUA E - LOTEAMENTO POPULAR JARDIM AMELIA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">RUA G - LOTEAMENTO POPULAR JARDIM AMELIA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">RUA I - LOTEAMENTO POPULAR JARDIM AMELIA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">RUA JULIO CESAR GONCALVES MOLLERI (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">RUA K - LOTEAMENTO POPULAR JARDIM AMELIA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="2.5">RUBENS DE ALMEIDA (CENTRO) (FL = 2.5)</option>
+    <option value="1.4">RUBI - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">RUBI - TRAVESSA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.4">RUI BARBOSA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.4">RUI VIEIRA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">SABINO ANASTACIO PAULO - VER (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">SALVADOR (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.1">SALVADOR JOAQUIN NUNES (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="2.5">SAMUEL HEUSI (CENTRO) (FL = 2.5)</option>
+    <option value="5.0">SAMUEL HEUSI JUNIOR (CABECUDAS) (FL = 5.0)</option>
+    <option value="1.7">SANTA BEATRIZ (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">SANTA CATARINA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">SANTA CECILIA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">SANTA CLARA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">SANTA LUZIA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">SANTINA ERNESTA DOS SANTOS (FAZENDA) (FL = 1.2)</option>
+    <option value="1.4">SANTO AGOSTINHO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">SANTO ANTONIO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">SANTO ANTONIO - BECO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="2.0">SANTO INACIO DE LOYOLA - TRAV (CENTRO) (FL = 2.0)</option>
+    <option value="1.1">SANTO RAMPELOTTI (MURTA) (FL = 1.1)</option>
+    <option value="1.0">SAO BENEDITO (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.7">SAO BENTO - TRAVESSA (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.4">SAO CRISTOVAO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">SAO FRANCISCO DE ASSIS (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">SAO FRANCISCO DO SUL (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">SAO GONCALO (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">SAO JOAO BATISTA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.2">SAO JOAQUIM (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">SAO JOSE (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">SAO LUIZ - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">SAO MIGUEL (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">SAO PAULO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">SAO PAULO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">SAO VICENTE (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">SATYRO LOUREIRO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.4">SAUL SCHEAD DOS SANTOS (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.0">SDO QUADRA 202.89 (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">SEBASTIANA CORREA TEIXEIRA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">SEBASTIAO BATSCHAUER (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">SEBASTIAO BONIFACIO CARDOSO (FAZENDA) (FL = 1.2)</option>
+    <option value="1.7">SEBASTIAO DO ROZARIO (RESSACADA) (FL = 1.7)</option>
+    <option value="1.2">SEBASTIAO JOAO DOS SANTOS (FAZENDA) (FL = 1.2)</option>
+    <option value="1.7">SEBASTIAO LUCAS PEREIRA (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">SEBASTIAO LUCAS PEREIRA - BECO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.7">SEBASTIAO LUCAS PEREIRA -FUNDO (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.2">SEBASTIAO PROCOPIO NUNES (RESSACADA/CARVALHO) (FL = 1.2)</option>
+    <option value="1.1">SEBASTIAO ROMEU SOARES (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.4">SELSO DUARTE MOREIRA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">SERAFIM FRANKLIM PEREIRA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">SERAFIM MANOEL INACIO (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="1.4">SERGIPE (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">SERLI MARIA MELO SIQUEIRA (MURTA) (FL = 1.0)</option>
+    <option value="5.0">SETE DE SETEMBRO - AVENIDA (CENTRO) (FL = 5.0)</option>
+    <option value="2.5">SETE DE SETEMBRO - AVENIDA (FAZENDA) (FL = 2.5)</option>
+    <option value="1.2">SIDNEY SCHULZE (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="2.5">SILVA (CENTRO) (FL = 2.5)</option>
+    <option value="1.1">SILVESTRO MOSER (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.0">SILVIO ERNESTO DA SILVA (ITAIPAVA) (FL = 1.0)</option>
+    <option value="2.0">SILVIO TOLENTINO DE SOUZA (CENTRO) (FL = 2.0)</option>
+    <option value="1.1">SÍLVIO VIRGÍLIO TEÓFILO (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.0">SOLANGE PEIRÃO (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.2">SOMBRIO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.0">SOROCABA (LIMOEIRO) (FL = 1.0)</option>
+    <option value="1.4">SOUZA CRUZ (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">STRINGARI (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.2">SUECIA (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.2">TAIO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.1">TELEMACO DE OLIVEIRA - VER (CORDEIROS) (FL = 1.1)</option>
+    <option value="2.5">TELEMACO PEREIRA LIBERATO (FAZENDA) (FL = 2.5)</option>
+    <option value="1.7">TEODORO LUIZ PEREIRA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.1">TEPORTI (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.7">TEREZA FRANCISCA PEREIRA (BALNEARIO SANTA CLARA) (FL = 1.7)</option>
+    <option value="1.7">TEREZA FRANCISCA PEREIRA (CABECUDAS) (FL = 1.7)</option>
+    <option value="1.2">TEREZA FRANCISCA PEREIRA (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.7">THADEU KOCK (RESSACADA) (FL = 1.7)</option>
+    <option value="1.4">THEODORO BENASSI (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">THEODORO LINO MARTINS (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.0">THEODORO LINO REGIS (MURTA) (FL = 1.0)</option>
+    <option value="2.0">TIBURCIO BASTOS GONCALVES - TV (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">TIBURCIO DE FREITAS (BARRA DO RIO) (FL = 1.7)</option>
+    <option value="2.5">TIJUCAS (CENTRO) (FL = 2.5)</option>
+    <option value="1.2">TILDA MACENA DE ALMEIDA (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">TIMBO (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.1">TIRADENTES (MURTA) (FL = 1.1)</option>
+    <option value="1.4">TOPAZIO (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">TREVO BR 101 (SALSEIROS) (FL = 1.0)</option>
+    <option value="2.5">TREZE DE MAIO (CENTRO) (FL = 2.5)</option>
+    <option value="2.5">TUBARAO (FAZENDA) (FL = 2.5)</option>
+    <option value="1.7">TUBARAO - BECO (FAZENDA) (FL = 1.7)</option>
+    <option value="1.4">TURQUEZA - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.7">ULYSSES MACHADO DUTRA (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.7">ULYSSES MACHADO DUTRA (FAZENDA) (FL = 1.7)</option>
+    <option value="2.5">UMBELINO DAMASIO DE BRITO (CENTRO) (FL = 2.5)</option>
+    <option value="2.5">UMBELINO DAMASIO DE BRITO (VILA OPERARIA) (FL = 2.5)</option>
+    <option value="1.2">URUBICI (SAO VICENTE) (FL = 1.2)</option>
+    <option value="2.5">URUGUAI (CENTRO) (FL = 2.5)</option>
+    <option value="2.5">URUGUAI (FAZENDA) (FL = 2.5)</option>
+    <option value="1.7">URUGUAI - BECO (FAZENDA) (FL = 1.7)</option>
+    <option value="1.0">VALDECIR BASTOS (MURTA) (FL = 1.0)</option>
+    <option value="1.7">VALDEMAR CORDONI - TRAVESSA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">VALDEMAR OLIVEIRA DA SILVA (ESPINHEIROS) (FL = 1.0)</option>
+    <option value="1.0">VALDEMIRO CORDEIRO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">VALDEVINO VIEIRA CORDEIRO (RESSACADA) (FL = 1.7)</option>
+    <option value="1.0">VALDIR LUIZ MELSI (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.0">VALDIR MERLO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.7">VALDIR SEVERINO - TRAVESSA (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">VALDIR SOUZA (MURTA) (FL = 1.0)</option>
+    <option value="1.1">VALERIO CADORE (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.1">VALERIO ZAGUINI (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.2">VALERIO ZERMIANI (BALNEARIO SANTA CLARA) (FL = 1.2)</option>
+    <option value="1.1">VALMIR OLIVIO DOS SANTOS (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.0">VALMOR ALBERTO VICENTE (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">VENERANDA ROCHA JUNKES (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">VENEZUELA (FAZENDA) (FL = 1.2)</option>
+    <option value="1.2">VENEZUELA (FAZENDINHA) (FL = 1.2)</option>
+    <option value="1.0">VERGILIO CADORE (CAMPECHE) (FL = 1.0)</option>
+    <option value="1.0">VERGILIO CADORE (LIMOEIRO) (FL = 1.0)</option>
+    <option value="3.3">VERGINIA ANGELO SEVERINO (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.0">VICENTE CANDIDO PEREIRA (SAO ROQUE) (FL = 1.0)</option>
+    <option value="1.7">VICENTE MEIRINHO (SAO JOAO) (FL = 1.7)</option>
+    <option value="1.0">VICTOR GONCALVES (SALSEIROS) (FL = 1.0)</option>
+    <option value="5.0">VICTOR KONDER - AV MINISTRO (CENTRO) (FL = 5.0)</option>
+    <option value="5.0">VICTOR KONDER - AV MINISTRO (FAZENDA) (FL = 5.0)</option>
+    <option value="1.4">VICTOR PEZZINI (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">VIDAL RAMOS - PRACA (CENTRO) (FL = 1.0)</option>
+    <option value="1.0">VIDEIRA (FAZENDA) (FL = 1.0)</option>
+    <option value="1.2">VILA SANTANA Q 13 (CABECUDAS) (FL = 1.2)</option>
+    <option value="1.2">VILA SANTANA Q 17 (CABECUDAS) (FL = 1.2)</option>
+    <option value="1.2">VILADINO LIBERATO NUNES (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.1">VILMAR JOSE PINTO (CIDADE NOVA) (FL = 1.1)</option>
+    <option value="1.4">VILSON GONÇALVES (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.0">VINICIUS GILBERTO MERLO (ITAIPAVA) (FL = 1.0)</option>
+    <option value="1.2">VIOLETAS (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="3.3">VIRGINA ANGELO SEVERINO (BALNEARIO SANTA CLARA) (FL = 3.3)</option>
+    <option value="1.7">VITOR RIBEIRO DA LUZ - TRAV (NOVA BRASILIA) (FL = 1.7)</option>
+    <option value="1.7">VITOR ZAGUINI (DOM BOSCO) (FL = 1.7)</option>
+    <option value="1.4">VITORIA (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.2">WALDEMAR BITTENCOURT FELIX (CIDADE NOVA) (FL = 1.2)</option>
+    <option value="1.2">WALDEMAR DA SILVA (ESPINHEIROS) (FL = 1.2)</option>
+    <option value="1.2">WALDEMAR KUMM (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.2">WALMOR RAMOS (SAO VICENTE) (FL = 1.2)</option>
+    <option value="1.7">WALTER FERREIRA (BALNEARIO SANTA CLARA) (FL = 1.7)</option>
+    <option value="1.7">WANDELINO WINTER (SAO JUDAS) (FL = 1.7)</option>
+    <option value="2.0">WANILDO BATISTA DA SILVA (CENTRO) (FL = 2.0)</option>
+    <option value="1.7">WILLY HENNING (SAO JUDAS) (FL = 1.7)</option>
+    <option value="1.0">WILSON CORDEIRO (NSA SRA DAS GRACAS) (FL = 1.0)</option>
+    <option value="1.1">WILSON MANOEL DA ROSA (BARRA DO RIO) (FL = 1.1)</option>
+    <option value="1.1">X (CORDEIROS) (FL = 1.1)</option>
+    <option value="1.2">XAXIM (SAO VICENTE) (FL = 1.2)</option>
+    <option value="5.0">XV DE NOVEMBRO (CENTRO) (FL = 5.0)</option>
+    <option value="1.4">YOLANDA PINTO CABRAL - PROF (CORDEIROS) (FL = 1.4)</option>
+    <option value="1.4">YUKIO CADOIA (SAO VICENTE) (FL = 1.4)</option>
+    <option value="1.2">ZACARIAS BAPTISTA MOURA - SERV (FAZENDA) (FL = 1.2)</option>
+    <option value="1.1">ZACARIAS DE SOUZA (MARUI) (FL = 1.1)</option>
+    <option value="2.0">ZELIA DE S C SILVA - PROF (CENTRO) (FL = 2.0)</option>
+    <option value="1.4">ZIRCONIA - TRAVESSA (CORDEIROS) (FL = 1.4)</option>
+    <option value="2.0">ZOZIMO JOSE PEIXOTO (CENTRO) (FL = 2.0)</option>
+    <option value="2.0">ZOZIMO JOSE PEIXOTO - BECO (CENTRO) (FL = 2.0)</option>
+    <option value="2.0">ZOZIMO JOSE PEIXOTO - TRAVESSA (CENTRO) (FL = 2.0)</option>
+    <option value="1.1">ZULMIRA LEOPOLDINA MACHADO (CORDEIROS) (FL = 1.1)</option>
+  </select>
+
+  <label>Valor do m² de Construção (VMQ):</label>
+  <select id="lista2">
+    <option value=3.2608 selected>Alvenaria (VMQ = 3,2608 x 1UFM)</option>
+    <option value=1.9565>Madeira (VMQ = 1,9565 x 1UFM)</option>
+    <option value=2.1739>Mista (VMQ = 2,1739 x 1UFM)</option>
+    <option value=1.0869>Galpão (VMQ = 1,0869 x 1UFM)</option>
+    <option value=3.913>Demais tipos de construção (VMQ = 3,913 x 1UFM)</option>
+  </select>
+
+  <label>Fator de correção quanto à Topofrafia (FT):</label>
+  <select id="lista3">
+    <option value=1.0 selected>Ao nível ou acima da via pública (FT = 1,0)</option>
+    <option value=0.8>Encostas (FT = 0,8)</option>
+    <option value=0.7>Abaixo do nível da via pública (FT = 0,7)</option>
+    <option value=0.3>Alagado (FT = 0,3)</option>
+    <option value=0.2>Área de preservação permanente não edificada (FT = 0,2)</option>
+  </select>
+
+  <label>Fator de correção quanto à Largura da Via (FV):</label>
+  <select id="lista4">
+    <option value=1.0>Tabela Revogada (FV = 1,0)</option> 
+  </select>
+
+  <label>Fator de Correção quanto à Situação do Lote (FS):</label>
+  <select id="lista5">
+    <option value=0.7>Encravado (FS = 0,7)</option>
+    <option value=1.1>Esquina (FS = 1,1)</option>
+    <option value=1.0 selected>Meio de quadra (FS = 1,0)</option>
+    <option value=0.5>Beco (FS = 0,5)</option>
+  </select>
+
+  <label>Fator de Correção quanto ao Acabamento (FA):</label>
+  <select id="lista6">
+    <option value=2.00>Luxo (FA = 2,0)</option>
+    <option value=1.50>Bom (FA = 1,5)</option>
+    <option value=1.00 selected>Normal (FA = 1,0)</option>
+    <option value=0.75>Comum (FA = 0,75)</option>
+    <option value=0.50>Popular (FA = 0,50)</option>
+  </select>
+
+  <label>Fator de Correção quanto à Condição (FI):</label>
+  <select id="lista7">
+    <option value=1.15 selected>Bom (FI = 1,15)</option>
+    <option value=1.00>Regular (FI = 1,00)</option>
+    <option value=0.85>Mau (FI = 0,85)</option>
+  </select>
+
+  <label>Fator de Correção quanto ao tipo da Edificação (FU):</label>
+  <select id="lista8">
+    <option value=1.00 selected>Apartamento (FU = 1,00)</option>
+    <option value=0.90>Casa (FU = 0,90)</option>
+    <option value=0.50>Barraco (FU = 0,50)</option>
+    <option value=0.30>Depósito Aberto (FU = 0,30)</option>
+    <option value=1.10>Edificação mista comercial/ residencial (FU = 1,10)</option>
+    <option value=1.20>Comércio (FU = 1,20)</option>
+    <option value=0.80>Indústria (FU = 0,80)</option>
+    <option value=0.50>Oficina (FU = 0,50)</option>
+    <option value=1.20>Hotel com restaurante (FU = 1,20)</option>
+    <option value=1.00>Hospital (FU = 1,00)</option>
+    <option value=1.05>Posto de serviço (FU = 1,05)</option>
+    <option value=1.20>Clube (FU = 1,20)</option>
+    <option value=0.90>Escola (FU = 0,90)</option>
+    <option value=0.80>Templo (FU = 0,80)</option>
+    <option value=1.00>Serviço Público (FU = 1,00)</option>
+    <option value=1.20>Cinema (FU = 1,20)</option>
+    <option value=1.20>Teatro (FU = 1,20)</option>
+    <option value=1.00>Outros (FU = 1,00)</option>
+    <option value=0.90>Escola (FU = 0,90)</option>
+    <option value=0.60>Galpão fechado (FU = 0,60)</option>
+    <option value=1.20>Restaurante e/ou bar (FU = 1,20)</option>
+    <option value=3.00>Depósito de combustíveis a céu aberto (FU = 3,00)</option>
+    <option value=1.20>Hotel sem restaurante (FU = 1,20)</option>
+  </select><BR>
+
+ <!-- -------------------------------Irregularidades------------------------------------>
+
+  <BR><a>***UFM = Unidade Fiscal Municipal = R$219,75 (Decreto 12772/2022).</a>
+  <h2>2) Irregularidades</h2>
+
+  <label>Área construída dos pavimentos excedentes em M²: (%i = 40%)</label>
+  <input type="text" id="inf_pa">
+
+  <label>Área construída que extrapola o Índice de Aproveitamento em M²: (%i = 10%)</label>
+  <input type="text" id="inf_ia">
+
+  <label>Área construída sobre recuo frontal em M²: (%i = 20%)</label>
+  <input type="text" id="inf_rf">
+
+  <label>Área construída sobre recuo lateral ou fundos em M²: (%i = 15%)</label>
+  <input type="text" id="inf_rl">
+
+  <label>Área do número de vagas faltantes em M²: (%i = 10%)</label>
+  <input type="text" id="inf_vf">
+
+  <label>Área permeável faltante em M²: (%i = 10%)</label>
+  <input type="text" id="inf_ap">
+
+  <label>Área de lazer faltante em M²: (%i = 5%)</label>
+  <input type="text" id="inf_al">
+
+  <label>Área construída que extrapola a Taxa de Ocupação em M²: (%i = 15%)</label>
+  <input type="text" id="inf_to"><BR>
+
+  <BR><a>***A área considerada para cada vaga faltante será de 15m²</label>
+
+ <!-- -------------------------------Memorial de Cálculo ------------------------------------>
+
+  <h2>3) Memorial de Cálculo</h2><BR>
+  
+  <a>3.1) CÁLCULO DA BASE DA MULTA COMPENSATÓRIA (BMC), EXPRESSO EM R$/m²:</a><BR>  
+  <a>BMC = VMQ x FT x FV x FS x FA x FI x FU x FL x 1UFM</a><BR>
+  <a>BMC =  <a id="printa_fatores1"></a> x  <a id="printa_fatores2"></a> x  <a id="printa_fatores3"></a> x  <a id="printa_fatores4"></a> x  <a id="printa_fatores5"></a> x  <a id="printa_fatores6"></a> x  <a id="printa_fatores7"></a> x  <a id="printa_fatores8"></a> x 219.75</a><BR> 
+  <a>BMC = </a> <a id="resultado_bmc"></a><BR> 
+  
+  <BR><a>3.2) CÁLCULO DO VALOR DA MULTA COMPENSATÓRIA (VMC), EXPRESSO EM R$:</a><BR>
+  <a>VMC = BMC x SOMATÓRIO (Ai x %i)</a><BR>
+    <a>BMC = <a>BMC x [(</a><a id="printa_irregularidades1"></a>x40%) + (<a id="printa_irregularidades2"></a>x10%) + (<a id="printa_irregularidades3"></a>x20%) + (<a id="printa_irregularidades4"></a>x15%) + (<a id="printa_irregularidades5"></a>x10%) + (<a id="printa_irregularidades6"></a>x10%) + (<a id="printa_irregularidades7"></a>x5%) + (<a id="printa_irregularidades8"></a>x15%)]</a><BR>
+  <a>VMC = BMC x [</a><a id="somatorio"></a><a>]</a><BR>
+
+  <!-- -------------------------------Apresentação do Cálculo ------------------------------------>
+  
+  <BR><div color: red><h1>DOCUMENTO NÃO VÁLIDO. LINK DISPONIBILIZADO APENAS PARA CONSULTA.</h1></div>
+  <h2>Valor da Multa Compensatória:</h2>
+  <h1 id="resultado_multa"></h1>
+  <input type="submit" value="Calcular" class = "noprint">
+  <button onclick = print() class="noprint">Imprimir</button>
+   
+</div>
+
+
+
+ <!-- -------------------------------------Script--------------------------------------------->
+  <script>
+
+    var calcularButton = document.querySelector('input[type="submit"]');
+    
+      var resultadoMULTA = document.getElementById('resultado_multa');
+      var resultadoBMC = document.getElementById('resultado_bmc');
+      var resultadoSOMATORIO = document.getElementById('somatorio');
+      var lista_fatores1 = document.getElementById('printa_fatores1');
+      var lista_fatores2 = document.getElementById('printa_fatores2');
+      var lista_fatores3 = document.getElementById('printa_fatores3');
+      var lista_fatores4 = document.getElementById('printa_fatores4');
+      var lista_fatores5 = document.getElementById('printa_fatores5');
+      var lista_fatores6 = document.getElementById('printa_fatores6');
+      var lista_fatores7 = document.getElementById('printa_fatores7');
+      var lista_fatores8 = document.getElementById('printa_fatores8');
+      var lista_irregularidades1 = document.getElementById('printa_irregularidades1');
+      var lista_irregularidades2 = document.getElementById('printa_irregularidades2');
+      var lista_irregularidades3 = document.getElementById('printa_irregularidades3');
+      var lista_irregularidades4 = document.getElementById('printa_irregularidades4');
+      var lista_irregularidades5 = document.getElementById('printa_irregularidades5');
+      var lista_irregularidades6 = document.getElementById('printa_irregularidades6');
+      var lista_irregularidades7 = document.getElementById('printa_irregularidades7');
+      var lista_irregularidades8 = document.getElementById('printa_irregularidades8');   
+      var multa = document.getElementById('printa_multa');
+
+
+    calcularButton.addEventListener('click', function() {
+      
+      var lista1 = document.getElementById('lista1').value;
+      var lista2 = document.getElementById('lista2').value;
+      var lista3 = document.getElementById('lista3').value;
+      var lista4 = document.getElementById('lista4').value;
+      var lista5 = document.getElementById('lista5').value;
+      var lista6 = document.getElementById('lista6').value;
+      var lista7 = document.getElementById('lista7').value;
+      var lista8 = document.getElementById('lista8').value;
+
+      var inf_pa = document.getElementById('inf_pa').value || 0;
+      var inf_ia = document.getElementById('inf_ia').value || 0;
+      var inf_rf = document.getElementById('inf_rf').value || 0;
+      var inf_rl = document.getElementById('inf_rl').value || 0;
+      var inf_vf = document.getElementById('inf_vf').value || 0;
+      var inf_ap = document.getElementById('inf_ap').value || 0;
+      var inf_al = document.getElementById('inf_al').value || 0;
+      var inf_to = document.getElementById('inf_to').value || 0;
+
+      var operacao2 = lista1 * lista2 * lista3 * lista4 * lista5 * lista6 * lista7 * lista8 * 219.75;
+      var operacao3 = (inf_pa * 0.4) + (inf_ia * 0.1)+ (inf_rf * 0.2)+ (inf_rl * 0.15)+ (inf_vf * 0.1)+ (inf_ap * 0.1)+ (inf_al * 0.05)+ (inf_to * 0.15);
+      var operacao4 = operacao3 * operacao2;
+
+      var somatorio = (operacao3)//<!--.toFixed(2)-->
+      var multa = operacao4
+
+      resultadoBMC.textContent = operacao2//.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      resultadoMULTA.textContent = operacao4.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      resultadoSOMATORIO.textContent = somatorio
+
+      lista_fatores1.textContent = lista1
+      lista_fatores2.textContent = lista2
+      lista_fatores3.textContent = lista3
+      lista_fatores4.textContent = lista4
+      lista_fatores5.textContent = lista5
+      lista_fatores6.textContent = lista6
+      lista_fatores7.textContent = lista7
+      lista_fatores8.textContent = lista8
+
+      lista_irregularidades1.textContent = inf_pa
+      lista_irregularidades2.textContent = inf_ia
+      lista_irregularidades3.textContent = inf_rf
+      lista_irregularidades4.textContent = inf_rl
+      lista_irregularidades5.textContent = inf_vf
+      lista_irregularidades6.textContent = inf_ap
+      lista_irregularidades7.textContent = inf_al
+      lista_irregularidades8.textContent = inf_to
+
+
+    });
+  </script>
+</body>
+
+
+
+
+</html>

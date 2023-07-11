@@ -40,13 +40,13 @@
         font-weight: bold;
         margin-bottom: 0.5mm;
       }
-
-      p {
-        font-size: 11pt;
-        font-weight: bold;
-        margin-bottom: 0.5mm;
-        color: #FF0000;
+	
       }
+	.vermelho{
+
+		color: #FF0000;
+
+	}
   
       label {
         display: block;
@@ -1724,7 +1724,7 @@
   <label>Área construída que extrapola a Taxa de Ocupação em M²: (%i = 15%)</label>
   <input type="text" id="inf_to"><BR>
 
-  <BR><a>***A área considerada para cada vaga faltante será de 15m²</label>
+  <BR><a>***A área considerada para cada vaga faltante será de 15m²</a>
 
  <!-- -------------------------------Memorial de Cálculo ------------------------------------>
 
@@ -1742,7 +1742,7 @@
 
   <!-- -------------------------------Apresentação do Cálculo ------------------------------------>
   
-  <BR><p>DOCUMENTO NÃO VÁLIDO. LINK DISPONIBILIZADO APENAS PARA CONSULTA E SIMULAÇÃO.</p>
+  <BR><h1 class = "vermelho">DOCUMENTO NÃO VÁLIDO. LINK DISPONIBILIZADO APENAS PARA CONSULTA E SIMULAÇÃO.</h1>
   <h2>Valor da Multa Compensatória:</h2>
   <h1 id="resultado_multa"></h1>
   <input type="submit" value="Calcular" class = "noprint">

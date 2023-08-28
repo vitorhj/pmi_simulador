@@ -92,7 +92,8 @@
 
   <b>Fator de Correção quanto à Localização (FL):</b>
   <select id="lista1">
-    <option value ="1.0"> LOGRADOURO: ANTONIO HEIL - RODOVIA DEPUTADO, BAIRRO: ARRAIAL DOS CUNHA, ZONA FISCAL: 1 - Azul, FL: 1.0</option>
+<option value =0 selected></option>
+<option value ="1.0"> LOGRADOURO: ANTONIO HEIL - RODOVIA DEPUTADO, BAIRRO: ARRAIAL DOS CUNHA, ZONA FISCAL: 1 - Azul, FL: 1.0</option>
 <option value ="2.5"> LOGRADOURO: "C" LOT VILAGE JULIANA, BAIRRO: BALNEARIO SANTA CLARA, ZONA FISCAL: 7 - Magenta, FL: 2.5</option>
 <option value ="3.3"> LOGRADOURO: ADOLPHO DE OLIVEIRA JUNIOR, BAIRRO: BALNEARIO SANTA CLARA, ZONA FISCAL: 8 - Preto, FL: 3.3</option>
 <option value ="1.2"> LOGRADOURO: AGUSTINHO LEMOS DE CAMARGO, BAIRRO: BALNEARIO SANTA CLARA, ZONA FISCAL: 3 - Laranja, FL: 1.2</option>
@@ -1739,7 +1740,8 @@
 
   <b>Valor do m² de Construção (VMQ):</b>
   <select id="lista2">
-    <option value=10.6234 selected>Alvenaria Residencial (VMQ = 10.6234x UFM)</option>
+    <option value=0 selected></option>  
+    <option value=10.6234>Alvenaria Residencial (VMQ = 10.6234x UFM)</option>
     <option value=11.5403>Alvenaria Comercial (VMQ = 11.5403x UFM)</option>
     <option value=3.9079>Madeira (VMQ = 3.9079x UFM)</option>
     <option value=7.0826>Mista (Alvenaria/Madeira) (VMQ = 7.0826x UFM)</option>
@@ -1749,6 +1751,7 @@
 
   <b>Fator de correção quanto à Topofrafia (FT):</b>
   <select id="lista3">
+    <option value=0 selected></option>  
     <option value=1.00 selected>Ao nível ou acima da via pública (FT = 1.00)</option>
     <option value=0.50>Encostas (FT = 0.50)</option>
     <option value=0.70>Abaixo do nível da via pública (FT = 0.70)</option>
@@ -1757,21 +1760,24 @@
 
   <b>Fator de correção quanto à Largura da Via (FV):</b>
   <select id="lista4">
-    <option value=0.50 selected>Até 04 (quatro) metros (FV = 0.50)</option>
+    <option value=0 selected></option>
+    <option value=0.50>Até 04 (quatro) metros (FV = 0.50)</option>
     <option value=0.75>Acima de 04 (quatro) metros até 08 (oito) metros (FV = 0.75)</option>
     <option value=1.00>Acima de 08 (oito) metros (FV = 1.00)</option>
   </select>
 
   <b>Fator de Correção quanto à Situação do Lote (FS):</b>
   <select id="lista5">
-    <option value=0.50 selected>Encravado (FS = 0.50)</option>
+    <option value=0 selected></option> 
+    <option value=0.50>Encravado (FS = 0.50)</option>
     <option value=1.00>Esquina (FS = 1.00)</option>
     <option value=1.00>Meio de quadra (FS = 1.00)</option>
   </select>
 
   <b>Fator de Correção quanto ao Acabamento (FA):</b>
   <select id="lista6">
-    <option value=2.00 selected>Residencial Multifamiliar, Padrão Alto Luxo (FA = 2.00)</option>
+    <option value=0 selected></option>  
+    <option value=2.00>Residencial Multifamiliar, Padrão Alto Luxo (FA = 2.00)</option>
     <option value=1.50>Residencial Multifamiliar, Padrão Alto (FA = 1.50)</option>
     <option value=1.00>Residencial Multifamiliar, Padrão Normal (FA = 1.00)</option>
     <option value=0.75>Residencial Multifamiliar, Padrão Baixo (FA = 0.75)</option>
@@ -1787,7 +1793,8 @@
 
   <b>Fator de Correção quanto à Condição (FI):</b>
   <select id="lista7">
-    <option value=1.000 selected>0 (zero) a 05 (cinco) anos (FI = 1.000)</option>
+    <option value=0 selected></option>  
+    <option value=1.000>0 (zero) a 05 (cinco) anos (FI = 1.000)</option>
     <option value=0.921>Acima de 05 (cinco) até 10 (dez) anos (FI = 0.921)</option>
     <option value=0.858>Acima de 10 (dez) até 15 (quinze) anos (FI = 0.858)</option>
     <option value=0.785>Acima de 15 (quinze) até 20 (vinte) anos (FI = 0.785)</option>
@@ -1798,7 +1805,8 @@
 
   <b>Fator de Correção quanto ao tipo da Edificação (FU):</b>
   <select id="lista8">
-    <option value=1.40 selected>Residencial Multifamiliar Apartamento (Fração Ideal menor que 25%) (FU = 1.40)</option>
+    <option value=0 selected></option>  
+    <option value=1.40>Residencial Multifamiliar Apartamento (Fração Ideal menor que 25%) (FU = 1.40)</option>
     <option value=1.30>Residencial Multifamiliar Sobrado (Fração Ideal maior ou igual a 25% e menor que 100%) (FU = 1.30)</option>
     <option value=1.00>Residencial Unifamiliar (Fração Ideal igual a 100%) (FU = 1.00)</option>
     <option value=1.20>Comercial e Serviço (Sala Fração Ideal menor que 25%) (FU = 1.20)</option>
